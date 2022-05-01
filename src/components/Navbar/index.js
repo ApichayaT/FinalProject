@@ -60,7 +60,7 @@ const Navbar = ({ toggle }) => {
               >Search</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="calculator"
+              <NavLinks to="calculator1"
               smooth={true}
               duration={500}
               spy={true}
