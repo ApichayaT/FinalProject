@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const Container = styled.div`
     height: 900px;
     display: flex;
@@ -27,6 +28,9 @@ export const SearchH1 = styled.h1`
         font-size: 2rem;
     }
 `
+
+
+
 
 export const Form = styled.h1`
 

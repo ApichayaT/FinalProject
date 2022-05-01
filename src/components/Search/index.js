@@ -1,5 +1,8 @@
 import React, {useState}  from 'react'
-import {Container,SearchH1,Form} from './SearchElements'
+
+import {Container,
+        SearchH1,
+        Form} from './SearchElements'
 import { FaSearch } from "react-icons/fa";
 
 const Search = () => {
@@ -11,7 +14,7 @@ const Search = () => {
   return (
     <div>
       <Container>
-        <SearchH1>SEARCH</SearchH1>   
+            <SearchH1>SEARCH</SearchH1>
       <Form>
       <form className="c-form" >
 		  <input 
