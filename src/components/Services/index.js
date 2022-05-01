@@ -9,45 +9,52 @@ import {
     ServicesCard,
     ServicesIcon,
     ServicesH2,
-    ServicesP
+    ServicesP,
+    BlogBtn 
 } from './ServicesElements'
 
 const Services = () => {
   return (
     <ServicesContainer id="services">
-        <ServicesH1>Our Services</ServicesH1>
+        <ServicesH1>Blog</ServicesH1>
         <ServicesWrapper>
             <ServicesCard>
                 <ServicesIcon src={Icon1} />
-                <ServicesH2>Reduce expense</ServicesH2>
-                <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP>
+                <ServicesH2>Work From Home ในช่วง COVID-19 กับน้ำหนักที่เพิ่มขึ้น</ServicesH2>
+                <ServicesP>จากสถานการณ์การระบาดของไวรัส COVID-19 ทำให้หลายคน มีโอกาสที่จะอยู่บ้านกันมากขึ้น ทั้งการถูกกักตัวหรือแม้แต่ Work From Home (WFH) ก็ตาม…</ServicesP>
+                <BlogBtn >READ MORE</BlogBtn>
             </ServicesCard>
             <ServicesCard>
                 <ServicesIcon src={Icon2} />
-                <ServicesH2>Virtual Offices</ServicesH2>
-                <ServicesP>You can access our platform online anywhere in the world.</ServicesP>
+                <ServicesH2>Work From Home ในช่วง COVID-19 กับน้ำหนักที่เพิ่มขึ้น</ServicesH2>
+                <ServicesP>จากสถานการณ์การระบาดของไวรัส COVID-19 ทำให้หลายคน มีโอกาสที่จะอยู่บ้านกันมากขึ้น ทั้งการถูกกักตัวหรือแม้แต่ Work From Home (WFH) ก็ตาม…</ServicesP>
+                <BlogBtn >READ MORE</BlogBtn>
             </ServicesCard>
             <ServicesCard>
                 <ServicesIcon src={Icon3} />
-                <ServicesH2>Premium Benefits</ServicesH2>
-                <ServicesP>Unlock our special membership card that return 5% cash back.</ServicesP>
+                <ServicesH2>Work From Home ในช่วง COVID-19 กับน้ำหนักที่เพิ่มขึ้น</ServicesH2>
+                <ServicesP>จากสถานการณ์การระบาดของไวรัส COVID-19 ทำให้หลายคน มีโอกาสที่จะอยู่บ้านกันมากขึ้น ทั้งการถูกกักตัวหรือแม้แต่ Work From Home (WFH) ก็ตาม…</ServicesP>
+                <BlogBtn >READ MORE</BlogBtn>
             </ServicesCard>
         </ServicesWrapper>
         <ServicesWrapper>
             <ServicesCard>
                 <ServicesIcon src={Icon1} />
-                <ServicesH2>Reduce expense</ServicesH2>
-                <ServicesP>We help reduce your fees and increase your overall revenue.</ServicesP>
+                <ServicesH2>Work From Home ในช่วง COVID-19 กับน้ำหนักที่เพิ่มขึ้น</ServicesH2>
+                <ServicesP>จากสถานการณ์การระบาดของไวรัส COVID-19 ทำให้หลายคน มีโอกาสที่จะอยู่บ้านกันมากขึ้น ทั้งการถูกกักตัวหรือแม้แต่ Work From Home (WFH) ก็ตาม…</ServicesP>
+                <BlogBtn >READ MORE</BlogBtn>
             </ServicesCard>
             <ServicesCard>
                 <ServicesIcon src={Icon2} />
-                <ServicesH2>Virtual Offices</ServicesH2>
-                <ServicesP>You can access our platform online anywhere in the world.</ServicesP>
+                <ServicesH2>Work From Home ในช่วง COVID-19 กับน้ำหนักที่เพิ่มขึ้น</ServicesH2>
+                <ServicesP>จากสถานการณ์การระบาดของไวรัส COVID-19 ทำให้หลายคน มีโอกาสที่จะอยู่บ้านกันมากขึ้น ทั้งการถูกกักตัวหรือแม้แต่ Work From Home (WFH) ก็ตาม…</ServicesP>
+                <BlogBtn >READ MORE</BlogBtn>
             </ServicesCard>
             <ServicesCard>
                 <ServicesIcon src={Icon3} />
-                <ServicesH2>Premium Benefits</ServicesH2>
-                <ServicesP>Unlock our special membership card that return 5% cash back.</ServicesP>
+                <ServicesH2>Work From Home ในช่วง COVID-19 กับน้ำหนักที่เพิ่มขึ้น</ServicesH2>
+                <ServicesP>จากสถานการณ์การระบาดของไวรัส COVID-19 ทำให้หลายคน มีโอกาสที่จะอยู่บ้านกันมากขึ้น ทั้งการถูกกักตัวหรือแม้แต่ Work From Home (WFH) ก็ตาม…</ServicesP>
+                <BlogBtn >READ MORE</BlogBtn>
             </ServicesCard>
         </ServicesWrapper>
     </ServicesContainer>

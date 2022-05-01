@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Search from '../components/Search'
+import Sidebar from '../components/Sidebar'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer';
 
@@ -13,6 +14,7 @@ const SearchPage = () => {
 
   return (
     <>
+      <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <Search />
       <Footer />

@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
-import { FaBars } from 'react-icons/fa' 
+import { FaAlignLeft } from 'react-icons/fa' 
 import { IconContext } from 'react-icons/lib';
+import logo from '../../images/logo.svg'
 import { animateScroll as scroll } from 'react-scroll';
 import { 
   Nav, 
@@ -39,16 +40,15 @@ const Navbar = ({ toggle }) => {
     <IconContext.Provider value={{ color: '#fff'}}>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to='/' onClick={toggleHome}>Calories</NavLogo>
+          <NavLogo to='/' onClick={toggleHome} >
+          <img src={logo} alt=""/>
+          </NavLogo>
           <MobileIcon onClick={toggle}>
-            <FaBars />
+            <FaAlignLeft className='berger-icon' color='#000' />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks 
-              to="/"
-              onClick={toggleHome}
-              >Home</NavLinks>
+              <NavLinks to="/" onClick={toggleHome}>Home</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="search1"
@@ -68,15 +68,15 @@ const Navbar = ({ toggle }) => {
               offset={-80}
               >Calculator</NavLinks>
             </NavItem>
-            {/* <NavItem>
-              <NavLinks to="signup"
+             <NavItem>
+              <NavLinks to="services"
               smooth={true}
               duration={500}
               spy={true}
               exact='true'
               offset={-80}
-              >Sign Up</NavLinks>
-            </NavItem> */}
+              >Blog</NavLinks>
+            </NavItem> 
           </NavMenu>
           <NavBtn>
             <NavBtnLink to="/signin">Sign In</NavBtnLink>

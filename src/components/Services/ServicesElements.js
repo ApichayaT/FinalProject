@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
+
+
 export const ServicesContainer = styled.div`
-    height: 1000px;
+    height: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,8 +25,8 @@ export const ServicesWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    grid-gap: 16px;
-    padding: 0 50px;
+    grid-gap: 20px;
+    padding: 0 45px;
     margin-bottom: 40px;
 
     @media screen and (max-width: 1000px) {
@@ -44,11 +46,11 @@ export const ServicesCard = styled.div`
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
-    max-height: 340px;
+    max-height: 400px;
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
-
+    
     &:hover {
         transition: scale(1.02);
         transition: all 0.2s easr-in-out;
@@ -59,7 +61,7 @@ export const ServicesCard = styled.div`
 export const ServicesIcon = styled.img`
     height: 160px;
     width: 160px;
-    margin-top: 10px;
+    margin-top: 3px;
 `
 
 export const ServicesH1 = styled.h1`
@@ -80,5 +82,29 @@ export const ServicesH2 = styled.h2`
 
 export const ServicesP = styled.p`
     font-size: 1rem;
+    
+`
+
+export const BlogBtn = styled.div`
+    
+    align-items: center;
     text-align: center;
+    color: #fff;
+    margin-top: 13px;
+    border-radius: 30px;
+    padding: 10px 22px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    box-shadow: 0 1px 0px rgb(114 114 114 / 30%);
+    background-color: #da4259;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #14D685;
+        color: #010606;
+    }
 `

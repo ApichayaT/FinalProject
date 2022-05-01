@@ -10,12 +10,14 @@ export const Container = styled.div`
     top: 0;
     z-index: 0;
     overflow: hidden;
-    background: linear-gradient(
+   /* background: linear-gradient(
         180deg,
         rgba(1, 147, 86, 1) 0%,
         rgba(10, 201, 122, 1) 100%
-    )
+    )*/
+    background:#f9f9f9 ;
 `
+
 
 export const FormWrap = styled.div`
     height: 100%;
@@ -32,7 +34,7 @@ export const Icon = styled(Link)`
     margin-left: 32px;
     margin-top: 32px;
     text-decoration: none;
-    color: #fff;
+    color: #01bf71;
     font-weight: 700;
     font-size: 32px;
 
