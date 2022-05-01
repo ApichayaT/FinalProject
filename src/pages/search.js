@@ -14,7 +14,7 @@ const SearchPage = () => {
   return (
     <>
       <Navbar toggle={toggle} />
-      <Search/>
+      <Search />
       <Footer />
     </>
   )
