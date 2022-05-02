@@ -51,7 +51,7 @@ const Navbar = ({ toggle }) => {
               >Home</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="search"
+              <NavLinks to="search1"
               smooth={true}
               duration={500}
               spy={true}
