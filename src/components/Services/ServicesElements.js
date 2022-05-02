@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Link as LinkR } from 'react-router-dom'
 
 
 export const ServicesContainer = styled.div`
@@ -9,6 +9,7 @@ export const ServicesContainer = styled.div`
     justify-content: center;
     align-items: center;
     background: #010606;
+    
 
     @media screen and (max-width: 768px) {
         height: 1100px;
@@ -59,17 +60,20 @@ export const ServicesCard = styled.div`
 `
 
 export const ServicesIcon = styled.img`
-    height: 160px;
-    width: 160px;
-    margin-top: 3px;
+    height: 180px;
+    width: 180px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
 `
 
 export const ServicesH1 = styled.h1`
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #fff;
     margin-bottom: 64px;
     margin-top: 50px;
-
+    font-family: 'Prompt', sans-serif;
     @media screen and (max-width: 480px) {
         font-size: 2rem;
     }
@@ -77,20 +81,32 @@ export const ServicesH1 = styled.h1`
 
 export const ServicesH2 = styled.h2`
     font-size: 1rem;
+    font-family: 'Prompt', sans-serif;
     margin-bottom: 10px;
 `
 
 export const ServicesP = styled.p`
-    font-size: 1rem;
+    font-size: 0.9rem;
+    font-family: 'Prompt', sans-serif;
     
 `
 
 export const BlogBtn = styled.div`
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
     
+`
+
+
+export const BlogBtnLink = styled(LinkR)`
     align-items: center;
     text-align: center;
     color: #fff;
-    margin-top: 13px;
+    margin-top: 10px;
     border-radius: 30px;
     padding: 10px 22px;
     font-size: 16px;

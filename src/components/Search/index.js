@@ -1,16 +1,11 @@
 import React, {useState}  from 'react'
-
 import {Container,
         SearchH1,
         Form} from './SearchElements'
 import { FaSearch } from "react-icons/fa";
 
 const Search = () => {
-  const [hover, setHover] = useState(false)
-
-    const onHover = () => {
-        setHover(!hover)
-    }
+  
   return (
     <div>
       <Container>

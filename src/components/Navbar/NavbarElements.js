@@ -13,6 +13,7 @@ export const Nav = styled.nav`
     justify-content: center;
     align-items: center;
     font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
     position: sticky;
     top: 30px;
     margin-left: 120px;
@@ -97,7 +98,8 @@ export const NavLinks = styled(LinkS)`
 export const NavBtn = styled.nav`
     display: flex;
     align-items: center;
-
+    font-family: 'Roboto', sans-serif;
+    
     @media screen and (max-width: 768px) {
         display: none;
     }
