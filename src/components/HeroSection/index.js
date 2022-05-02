@@ -32,7 +32,7 @@ const HeroSection = () => {
             <HeroP>
                 Sign up for a new account today and recieve $250 in credits towards your next payment.
             </HeroP>
-            <HeroBtnWrapper>
+            
             <SignInBtnLink to="/signin"
             onMouseEnter={onHover} 
             onMouseLeave={onHover}
@@ -44,7 +44,7 @@ const HeroSection = () => {
             exact='true'
             offset={-80}
             >Get started{hover ? <ArrowForward /> : <ArrowRight />}</SignInBtnLink> 
-            </HeroBtnWrapper>
+           
         </HeroContent>
     </HeroContainer>
   )

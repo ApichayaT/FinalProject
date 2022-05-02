@@ -83,20 +83,25 @@ export const HeroP = styled.p`
         font-size: 18px;
     }
 `
-
+/*
 export const HeroBtnWrapper = styled.div`
     margin-top: 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
-`
+`*/
 export const SignInBtnLink = styled(LinkR)`
+    margin-top: 32px;
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: center;
     border-radius: 50px;
     background: #01bf71;
     white-space: nowrap;
-    padding: 10px 22px;
+    padding: 15px 25px;
     color: #010606;
     font-size: 16px;
+    align-items: center;
     outline: none;
     border: none;
     cursor: pointer;
