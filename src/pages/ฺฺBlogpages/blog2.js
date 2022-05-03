@@ -16,8 +16,8 @@ const BlogPage2 = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <Blog2 />
-      <Footer />
       <ScrollToTop />
+      <Footer />
       
     </>
   )
