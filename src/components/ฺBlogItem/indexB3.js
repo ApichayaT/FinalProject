@@ -1,10 +1,64 @@
-import React, {useState}  from 'react'
-import { Container, Form, FormButton, FormContent, FormH1, FormInput, FormLabel, FormWrap, Text } from './BlogElements'
+import React  from 'react'
+import { BlogpostContainer ,Blogcard ,PostTitle, PostedBy,PostImage,Contentp,Contentheader,ContentConclusion} from './BlogElements' 
+import { BsPersonCircle ,BsCalendar} from "react-icons/bs";
+import diet1 from '../../images/diet1.jpg'
+import diet2 from '../../images/diet2.jpg'
+import diet3 from '../../images/diet3.jpg'
+import diet4 from '../../images/diet4.jpg'
+import diet5 from '../../images/diet5.jpg'
+import diet6 from '../../images/diet6.jpg'
+import diet7 from '../../images/diet7.jpg'
+import diet8 from '../../images/diet8.jpg'
 
 const Blog3 = () => {
   return (
     <>
-    
+      <BlogpostContainer id="services">
+            <Blogcard>
+            <PostTitle>ไดเอทแบบมีความสุข อยากกินต้องได้กิน</PostTitle>
+            <PostedBy>
+              <BsPersonCircle class="iconperson"/> By: Calories 
+              <BsCalendar class="iconcalendar" /> Updated: เมษายน 24, 2022
+            </PostedBy>
+            <PostImage src={diet1}/>
+            <Contentheader>เทคนิคดีๆ กับการไดเอทแบบไม่ต้องอด</Contentheader>
+                <Contentheader>1. ใช้หญ้าหวานแทนน้ำตาลปกติ</Contentheader>
+                <PostImage src={diet2}/>
+                <Contentp>หญ้าหวานเป็นพืชชนิดหนึ่งที่เป็นแหล่งความหวานจากธรรมชาติ แถมยังแคลลอรี่น้อยมากจนแทบไม่มีแคลลอรี่เลย หญ้าหวานเป็นที่นิยมกันมากในหมู่คนรักสุขภาพและผู้ป่วยโรคเบาหวาน 
+                  โดยหญ้าหวานนี้สามารถให้ความหวานแทนน้ำตาลปกติได้เลย และยังสามารถทำเมนูได้หลากหลายไม่ว่าจะเป็นเครื่องดื่ม อาหาร หรือขนม นอกจากนี้หญ้าหวานยังมีสรรพคุณในการช่วยลดไขมันและน้ำตาลในเลือดสูงอีกด้วย
+                </Contentp>
+                <Contentheader>2. ดื่มน้ำเยอะๆ</Contentheader>
+                <PostImage src={diet3}/>
+                <Contentp>การดื่มน้ำเยอะๆ ไม่เพียงเพิ่มความชุ่มชื้นให้กับผิวของเรา แต่การดื่มน้ำก่อนมื้ออาหารประมาณ 30 นาทียังช่วยให้เราทานได้น้อยลง เร่งอัตราการเผาผลาญ โดยปกติทั่วไปควรดื่มน้ำอย่างน้อยวันละ 8 แก้ว
+                </Contentp>
+                <Contentheader>3. หันมาใช้เกลือสีชมพู (เกลือหิมาลายัน)</Contentheader>
+                <PostImage src={diet4}/>
+                <Contentp>เกลือสีชมพูหรือเรียกอีกชื่อว่าเกลือหิมาลายัน เป็นเกลือที่มีแร่ธาตุสูงมากถึง 84 ชนิด รสชาติกลมกล่อม ช่วยเร่งอัตราการเผาผลาญพลังงาน ควบคุมน้ำตาลในเลือด 
+                  แถมเกลือชนิดนี้ยังสามารถเอามาใช้ประโยชน์อย่างอื่นนอกจากกินได้ด้วย เช่น ทำสปา ขัดผิว
+                  </Contentp>
+                  <Contentheader>4. กินโปรตีนและไฟเบอร์ให้มากขึ้น</Contentheader>
+                <PostImage src={diet5}/>
+                <Contentp>การกินอาหารที่มีโปรตีนเป็นหลักไม่ใช่เรื่องที่ผิดในการไดเอท เพราะโปรตีนนั้นใช้พลังงานในการเผาผลาญที่สูง ดังนั้นการกินโปรตีนเยอะๆจึงช่วยให้ร่างกายใช้พลังงานมากขึ้น 
+                  เพียงแต่ต้องระวังในเรื่องของไขมันเท่านั้น และการกินผักหรือเหล่าไฟเบอร์ทั้งหลายก็จะช่วยให้อยู่ท้องนานขึ้นด้วย
+                  </Contentp>
+                  <Contentheader>5. ไม่อดอาหาร</Contentheader>
+                <PostImage src={diet6}/>
+                <Contentp>แม้ว่าในแต่ละวันเราจะต้องคุมปริมาณแคลลอรี่ไม่ให้เกินกำหนด แต่การไม่อดอาหารก็เป็นเรื่องสำคัญเช่นกันเพราะถ้าหากเราอดอาหารไปซักมื้อนึงจะทำให้ร่างกายเกิดความหิวมากขึ้นจนกินมื้อถัดไปมากกว่าปกติ 
+                  ทางที่ดีคือการควบคุมแคลลอรี่ของทั้งวันดีกว่าการอดอาหาร รู้อย่างนี้แล้วใครที่ชอบงดมื้อเย็นหรืออดอาหารหลัง 2 ทุ่มควรเปลี่ยนใจได้แล้ว
+                  </Contentp>
+                  <Contentheader>6. หันมากินคาร์โบไฮเดรตไม่ขัดสีและพืชตระกูลถั่ว</Contentheader>
+                <PostImage src={diet7}/>
+                <Contentp>คาร์โบไฮเดรตหรือแป้งที่เรามักจะกินในรูปแบบของข้าวและขนมนั้นเป็นตัวการสำคัญที่ทำให้อ้วนลงพุง แต่ก็ยังมีคาร์โบไฮเดรตอีกประเภทที่กินแล้วดีต่อร่างกาย นั่นคือคาร์โบไฮเดรตแบบไม่ขัดสีหรือจำพวกธัญพืช 
+                  และถั่วนั่นเอง ปัจจุบันมีการนำถั่วอัลมอนด์มาทำเป็นแป้งขนมเพื่อทดแทนแป้งแบบปกติที่ให้คาร์โบไฮเดรตมาก และมีขนมปังโฮลวีตเป็นอีกทางเลือกหนึ่งสำหรับผู้ที่รักสุขภาพแต่ชื่นชอบขนมปังด้วย
+                  </Contentp>
+                  <Contentheader>7. เพิ่มความเผ็ดในอาหารที่กิน</Contentheader>
+                <PostImage src={diet8}/>
+                <Contentp>เราสามารถเร่งการเผาผลาญพลังงานในร่างกายได้ด้วยการกินอาหารที่เผ็ดขึ้น ไม่ว่าจะเป็นพริกป่น พริกขี้หนูหรืออาหารที่ให้รสชาติเผ็ดร้อนก็ช่วยได้ทั้งนั้น 
+                  แต่ถ้าหากกินอาหารที่มีรสเผ็ดมากเกินไปอาจทำให้ปวดท้องได้เช่นกัน ดังนั้นจึงควรกินแต่พอดี
+                  </Contentp>
+        
+              </Blogcard>
+        </BlogpostContainer>
     </>
   )
 }

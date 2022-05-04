@@ -117,7 +117,12 @@ export const Contentheader = styled.h3`
     margin-right: 50px;
     line-height: 1;
     @media screen and (max-width: 768px) {
-        font-size: 18px;
+    font-size: 18px;
+    }
+    @media screen and (max-width: 480px) {
+    font-size: 16px;
+    line-height: 1.5rem;
+    margin:0 30px;
     }
 `
 export const Contentp = styled.p`
@@ -133,6 +138,7 @@ export const Contentp = styled.p`
     .bulltesH{
         font-family: "Prompt",Sans-serif;
         margin-left: 60px;
+        margin-right: 50px;
         padding-top:1rem;
     }
     .bulltesp{
@@ -144,13 +150,12 @@ export const Contentp = styled.p`
         margin-left: 25px;
         padding-top:1rem;
     }
-
     }
 
     @media screen and (max-width: 480px) {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.5rem;
-    
+    margin:0 30px;
     }
 `
 
@@ -169,5 +174,12 @@ export const ContentConclusion = styled.h4`
         font-size: 16.7px;
         letter-spacing: 2.2px;
         font-weight: 400;
+    }
+
+    @media screen and (max-width: 480px) {
+    font-size: 11px;
+    line-height: 1rem;
+    margin: 0 30px;
+    padding: 1.4rem;
     }
 `

@@ -1,9 +1,9 @@
-import React, {useState}  from 'react'
+import React  from 'react'
 import { BlogpostContainer ,Blogcard ,PostTitle, PostedBy,PostImage,Contentp,Contentheader,ContentConclusion} from './BlogElements' 
 import { BsPersonCircle ,BsCalendar} from "react-icons/bs";
-import Img1 from '../../images/pizza.jpg'
-import Img2 from '../../images/WFH.jpg'
-import Img3 from '../../images/salad.jpg'
+import pizza from '../../images/pizza.jpg'
+import WFH from '../../images/WFH.jpg'
+import salad from '../../images/salad.jpg'
 
 const Blog1 = () => {
   return (
@@ -15,7 +15,7 @@ const Blog1 = () => {
               <BsPersonCircle class="iconperson"/> By: Calories 
               <BsCalendar class="iconcalendar" /> Updated: เมษายน 24, 2022
             </PostedBy>
-            <PostImage src={Img1}/>
+            <PostImage src={pizza}/>
                 <Contentp>การกักตัว อยู่บ้านนาน ๆ ในช่วงสถานการณ์ COVID-19 ทำให้วิถีชีวิตและกิจวัตรประจำวันหลายคนเปลี่ยนไป ทั้งเรื่องอาหารและการจัดการเวลาต่าง ๆ รวมถึงการเคลื่อนไหวที่น้อยลงด้วย 
               ทั้งหมดนี้ล้วนส่งผลกระทบต่อสุขภาพทั้งทางตรงและทางอ้อม จนก่อให้เกิด ‘ภาวะน้ำหนักเพิ่ม’
                 </Contentp>
@@ -26,7 +26,7 @@ const Blog1 = () => {
                 <Contentp>โดยงานวิจัยได้ศึกษาจากกลุ่มตัวอย่าง จำนวน 269 คน จาก 37 รัฐ และวอชิงตันดิสตริกต์ออฟโคลัมเบีย ซึ่งผลลัพธ์เผยว่า จากกลุ่มตัวอย่างที่เข้าร่วม มีน้ำหนักตัวเพิ่มขึ้นอย่างต่อเนื่องเฉลี่ย 
               0.27 กิโลกรัม ทุก 10 วัน หรือ สรุปได้ว่า ในทุก 1 เดือนนั้น น้ำหนักจะเพิ่มขึ้นเกือบ 1 กิโลกรัมเลยทีเดียว
                 </Contentp>
-            <PostImage src={Img2}/>
+            <PostImage src={WFH}/>
             <Contentheader>กักตัวช่วง COVID-19 มีผลให้น้ำหนักเพิ่มอย่างไร?</Contentheader>
                 <Contentp>น้ำหนักเพิ่ม...เพราะความเครียด ความกังวลเกี่ยวกับสถานการณ์ COVID-19 ที่มักวนเวียนในหัวหลาย ๆ คน คือเรื่องสุขภาพ ปัญหาการเงิน และยังรวมไปถึงการอยู่ในสภาพแวดล้อมเดิม ๆ 
                   ซึ่งความเครียดเหล่านี้ส่งผลให้น้ำหนักตัวเพิ่มขึ้น โดยก่อนที่จะพูดถึงที่มาที่ไประหว่างความเครียดและน้ำหนักนั้น ควรทำความรู้จักกับสองฮอร์โมนที่มีบทบาทกับน้ำหนักตัว นั่นคือ เลปติน หรือ ฮอร์โมนความอิ่ม 
@@ -44,7 +44,7 @@ const Blog1 = () => {
               บทสรุป งานวิจัยนั้นเผย จากกลุ่มตัวอย่างชาวอเมริกันที่กักตัวอยู่บ้าน มีน้ำหนักตัวเพิ่มขึ้นอย่างต่อเนื่อง เฉลี่ย 0.27 กิโลกรัม ทุก 10 วัน โดยสาเหตุที่ทำให้ช่วงกักตัว นั้นทำให้มีน้ำหนักเพิ่มขึ้นมาจากความเครียด 
               ซึ่งลดประสิทธิภาพการทำงานของฮอร์โมนเลปตินและเกรลิน ทำให้หิวบ่อย อยากอาหารมากกว่าปกติ
             </ContentConclusion>
-            <PostImage src={Img3}/>
+            <PostImage src={salad}/>
             <Contentheader>กักตัวอยู่บ้านอย่างไรไม่ให้อ้วน?</Contentheader>
                 <Contentp> 
                   <li className="bulltesH"><b className="bulltesp">ดื่มน้ำให้เพียงพอ</b> <br></br>

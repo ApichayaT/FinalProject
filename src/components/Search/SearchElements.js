@@ -3,40 +3,40 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     height: 900px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: block;
     background: #f9f9f9;
+    padding: 0 13rem;
+    padding-top: 10rem ;
 
-    @media screen and (max-width: 768px) {
-        height: 1100px;
-    }
-
-    @media screen and (max-width: 480px) {
-        height: 1300px;
-    }
+`
+export const Card = styled.div`
+    background: #fff;
+    display: block;
+	height: 900px;
+	z-index:0 ;
+    padding-top: 0.7rem;
+    padding-bottom: 10rem;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0.7px 1px rgba(0,0,0,0.2);
 `
 
 export const SearchH1 = styled.h1`
     font-size: 3rem;
     color: #01bf71;
-   
-    margin-top: -350px;
+	padding-top:2rem ;
+	text-align:center;
+	display: block;
     
     @media screen and (max-width: 480px) {
         font-size: 2rem;
     }
 `
 
-
-
-
-export const Form = styled.h1`
+export const Form = styled.form`
 
 font-family: sans-serif;
-	width: 65vw;
-	margin: 7vh auto;
+	width: 700px;
+	align-items: center;
     .c-form {
 		width: 100%;
 		position: relative;
@@ -45,7 +45,8 @@ font-family: sans-serif;
 			border-radius: 10px;
 			width: 100%;
 			height: 80px;
-			padding: 0 75px 0 15px;
+			padding: 0 15rem;
+			padding-left:2rem ;
 			font-family:sans-serif;
 			font-size: 18px;
 			font-weight: bold;
@@ -56,7 +57,7 @@ font-family: sans-serif;
 			top: 0;
 			right: 0;
 			height: 80px;
-			padding: 0 25px;
+			width:10%; 
 			border: none;
 			border-radius: 0 5px 5px 0;
 			background-color: #40b7ec;
