@@ -41,7 +41,7 @@ const Navbar = ({ toggle }) => {
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavLogo to='/' onClick={toggleHome} >
-          <img src={logo} alt=""/>
+            <img src={logo} alt=""/>
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaAlignLeft className='berger-icon' color='#000' />

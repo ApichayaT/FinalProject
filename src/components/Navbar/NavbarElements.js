@@ -23,6 +23,8 @@ export const Nav = styled.nav`
     border-radius: 30px;
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
+       
+        
     }
 `
 
@@ -34,19 +36,21 @@ export const NavbarContainer = styled.div`
     width: 100%;
     padding: 0 24px;
     max-width: 1100px;
+    
 `
 
+
 export const NavLogo = styled(LinkR)`
-    color: #000;
     justify-self: flex-start;
-    cursor: pointer;
-    font-size: 1.5rem;
+    cursor: pointer; 
     display: flex;
     align-items: center;
-    margin-left: 24px;
-    font-weight: bold;
-    text-decoration: none;
+    margin-left: 22px;
+    margin-top:auto;
+    margin-bottom:auto;
+    
 `
+
 
 export const MobileIcon = styled.div`
     display: none;
@@ -57,9 +61,7 @@ export const MobileIcon = styled.div`
         right: 0;
         transform: translate(-100%, 70%);
         font-size: 1.8rem;
-        cursor: pointer;
-        
-       
+        cursor: pointer; 
     }
 `
 
@@ -109,7 +111,7 @@ export const NavBtnLink = styled(LinkR)`
     border-radius: 50px;
     background: #01bf71;
     white-space: nowrap;
-    padding: 10px 22px;
+    padding: 10px 18px;
     display: flex;
     color: #010606;
     font-size: 16px;

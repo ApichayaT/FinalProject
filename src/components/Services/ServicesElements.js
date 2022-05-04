@@ -3,40 +3,45 @@ import { Link as LinkR } from 'react-router-dom'
 
 
 export const ServicesContainer = styled.div`
-    height: 1200px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #010606;
-    
+    padding-bottom:4rem ;
+    padding-top:4rem ;
 
     @media screen and (max-width: 768px) {
-        height: 1100px;
+        height: 1600px;
     }
 
     @media screen and (max-width: 480px) {
-        height: 1300px;
+        height: 2800px;
     }
 `
 
 export const ServicesWrapper = styled.div`
-    max-width: 1000px;
+    max-width: 1800px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr;
     align-items: center;
     grid-gap: 20px;
-    padding: 0 45px;
-    margin-bottom: 40px;
-
+    padding: 0 320px;
+    margin-bottom: 30px;
     @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr 1fr;
+        padding: 0 1.2rem;
     }
 
     @media screen and (max-width: 768px) {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         padding: 0 20px;
+    }
+    @media screen and (max-width: 480px) {
+        grid-template-columns: 1fr;
+        
     }
 `
 
@@ -71,8 +76,7 @@ export const ServicesIcon = styled.img`
 export const ServicesH1 = styled.h1`
     font-size: 3rem;
     color: #fff;
-    margin-bottom: 64px;
-    margin-top: 50px;
+    margin-bottom: 50px;
     font-family: 'Prompt', sans-serif;
     @media screen and (max-width: 480px) {
         font-size: 2rem;
@@ -96,7 +100,7 @@ export const BlogBtn = styled.div`
     align-items: center;
 
     @media screen and (max-width: 768px) {
-        display: none;
+       
     }
     
 `

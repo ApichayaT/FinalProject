@@ -43,8 +43,6 @@ const Services = () => {
                     <BlogBtnLink to="/blog3">READ MORE</BlogBtnLink>
                 </BlogBtn>
             </ServicesCard>
-        </ServicesWrapper>
-        <ServicesWrapper>
             <ServicesCard>
                 <ServicesIcon src={Icon1} />
                 <ServicesH2>Work From Home ในช่วง COVID-19 กับน้ำหนักที่เพิ่มขึ้น</ServicesH2>
@@ -70,6 +68,7 @@ const Services = () => {
                 </BlogBtn>
             </ServicesCard>
         </ServicesWrapper>
+        
     </ServicesContainer>
   )
 }
