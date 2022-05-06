@@ -10,12 +10,10 @@ const Search = () => {
       <Card>
       <SearchH1>SEARCH</SearchH1>
         <Form>
-        <form className="c-form" > 
-        <input type="text" placeholder="Search..." className="c-form_e-input"/>
-		    <button type="submit" className="c-form_e-button">
-        <FaSearch/>
-			  </button>
-		    </form>
+        <div class="search-bar">
+	        <input type="text" placeholder="search..." />
+	        <button>go!</button>
+          </div>
         </Form>
       </Card>
             

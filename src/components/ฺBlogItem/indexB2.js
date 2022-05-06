@@ -1,4 +1,4 @@
-import React, {useState}  from 'react'
+import React  from 'react'
 import { BlogpostContainer ,Blogcard ,PostTitle, PostedBy,PostImage,Contentp,Contentheader,ContentConclusion} from './BlogElements' 
 import { BsPersonCircle ,BsCalendar} from "react-icons/bs";
 import keto1 from '../../images/keto1.jpg'
@@ -10,7 +10,7 @@ import keto5 from '../../images/keto5.jpg'
 const Blog2 = () => {
   return (
     <>
-         <BlogpostContainer id="services">
+         <BlogpostContainer >
             <Blogcard>
             <PostTitle>การลดน้ำหนักแบบคีโตเจนิค ไดเอท คืออะไร </PostTitle>
             <PostedBy>

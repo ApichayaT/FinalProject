@@ -13,7 +13,7 @@ import diet8 from '../../images/diet8.jpg'
 const Blog3 = () => {
   return (
     <>
-      <BlogpostContainer id="services">
+      <BlogpostContainer >
             <Blogcard>
             <PostTitle>ไดเอทแบบมีความสุข อยากกินต้องได้กิน</PostTitle>
             <PostedBy>

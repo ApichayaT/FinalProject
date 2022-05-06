@@ -40,8 +40,8 @@ const Navbar = ({ toggle }) => {
     <IconContext.Provider value={{ color: '#fff'}}>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to='/' onClick={toggleHome} >
-            <img src={logo} alt=""/>
+          <NavLogo to='/' onClick={toggleHome} className='logo' >
+            <img src={logo} alt=""/ >
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaAlignLeft className='berger-icon' color='#000' />

@@ -8,7 +8,7 @@ import salad from '../../images/salad.jpg'
 const Blog1 = () => {
   return (
     <>
-        <BlogpostContainer id="services">
+        <BlogpostContainer>
             <Blogcard>
             <PostTitle>ผลวิจัยเผย กักตัวอยู่บ้านเป็นสาหตุที่ทำให้น้ำหนักเพิ่มขึ้นต่อเนื่อง</PostTitle>
             <PostedBy>

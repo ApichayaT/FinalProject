@@ -9,7 +9,7 @@ import vitamin4 from '../../images/vitamin4.jpg'
 const Blog4 = () => {
   return (
     <>
-        <BlogpostContainer id="services">
+        <BlogpostContainer>
             <Blogcard>
             <PostTitle>วิตามิน ‘บำรุงสายตา’ เพิ่มการมองเห็น ป้องกันตาเสื่อมก่อนวัย</PostTitle>
             <PostedBy>

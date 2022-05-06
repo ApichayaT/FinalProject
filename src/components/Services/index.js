@@ -3,8 +3,8 @@ import Icon1 from '../../images/service1.jpg'
 import Icon2 from '../../images/service2.jpg'
 import Icon3 from '../../images/service3.jpg'
 import Icon4 from '../../images/service4.jpg'
-
-
+import Icon5 from '../../images/service5.jpg'
+import Icon6 from '../../images/service6.jpg'
 
 import {
     ServicesContainer,
@@ -56,17 +56,17 @@ const Services = () => {
                 </BlogBtn>
             </ServicesCard>
             <ServicesCard>
-                <ServicesIcon src={Icon2} />
-                <ServicesH2>Work From Home ในช่วง COVID-19 กับน้ำหนักที่เพิ่มขึ้น</ServicesH2>
-                <ServicesP>จากสถานการณ์การระบาดของไวรัส COVID-19 ทำให้หลายคน มีโอกาสที่จะอยู่บ้านกันมากขึ้น ทั้งการถูกกักตัวหรือแม้แต่ Work From Home (WFH) ก็ตาม…</ServicesP>
+                <ServicesIcon src={Icon5} />
+                <ServicesH2>ความจริงของ โภชนาการการคุมอาหาร ที่คุณอาจยังไม่รู้</ServicesH2>
+                <ServicesP>“โภชนาการการคุมอาหาร” หรือสิ่งที่หลายๆคนเรียกว่าไว้ว่าการคุมอาหาร ซึ่งการคุมอาหารสำหรับผู้ที่มีน้ำหนักเกินนั้นมีหลายตำราได้ให้ข้อเสนอไว้…</ServicesP>
                 <BlogBtn >
                     <BlogBtnLink to="/blog5">READ MORE</BlogBtnLink>
                 </BlogBtn>
             </ServicesCard>
             <ServicesCard>
-                <ServicesIcon src={Icon1} />
-                <ServicesH2>Work From Home ในช่วง COVID-19 กับน้ำหนักที่เพิ่มขึ้น</ServicesH2>
-                <ServicesP>จากสถานการณ์การระบาดของไวรัส COVID-19 ทำให้หลายคน มีโอกาสที่จะอยู่บ้านกันมากขึ้น ทั้งการถูกกักตัวหรือแม้แต่ Work From Home (WFH) ก็ตาม…</ServicesP>
+                <ServicesIcon src={Icon6} />
+                <ServicesH2>อ้วน หรือเปล่า? วิธีเช็คง่ายๆก่อนสายเกินแก้</ServicesH2>
+                <ServicesP>อ้วนแล้วหรือยัง? คำถามที่ใครหลายคนไม่กล้าตั้งคำถาม ความอ้วนเป็นสิ่งที่เกิดขึ้นง่ายและต้องใช้ความพยายามเป็นอย่างมากในการจะกำจัดไป…</ServicesP>
                 <BlogBtn >
                     <BlogBtnLink to="/blog6">READ MORE</BlogBtnLink>
                 </BlogBtn>
