@@ -40,7 +40,7 @@ const Navbar = ({ toggle }) => {
     <IconContext.Provider value={{ color: '#fff'}}>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to='/' onClick={toggleHome} className='logo' >
+          <NavLogo to='/' onClick={toggleHome} >
             <img src={logo} alt=""/ >
           </NavLogo>
           <MobileIcon onClick={toggle}>

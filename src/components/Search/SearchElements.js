@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-    height: 900px;
+    height: 1100px;
     display: block;
     background: #f9f9f9;
     padding: 0 13rem;
@@ -23,16 +23,23 @@ export const Container = styled.div`
 export const Card = styled.div`
     background: #fff;
     display: block;
-	height: 900px;
+	height: 1100px;
 	z-index:0 ;
     padding-top: 0.7rem;
     padding-bottom: 10rem;
     transition: all 0.2s ease-in-out;
     box-shadow: 0 0.7px 1px rgba(0,0,0,0.2);
+	@media screen and (max-width: 768px) {
+        height: 900px;
+    }
+
+    @media screen and (max-width: 480px) {
+        height: 500px;
+    }
 `
 
 export const SearchH1 = styled.h1`
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: #01bf71;
 	padding-top:2rem ;
 	text-align:center;
@@ -45,7 +52,6 @@ export const SearchH1 = styled.h1`
 
 export const Form = styled.form`
 
-font-family: sans-serif;
 	width: 700px;
 	align-items: center;
 	
@@ -66,15 +72,16 @@ font-family: sans-serif;
               4px 4px 0 0 #4a69bd,
               5px 5px 0 0 #4a69bd,
               6px 6px 0 0 #4a69bd
-		}
-
+			}
+		
 	.search-bar input {
   		border: 0;
   		outline: none;
   		height: 100%;
   		width: 85%;
+		font-family: 'Prompt', sans-serif;
   		padding: 0 1rem;
-  		font-size: 1rem;
+  		font-size: 1.5rem;
   		font-style: italic;
 		}
 
@@ -84,10 +91,32 @@ font-family: sans-serif;
   		color: white;
 		margin: auto;
   		font-weight: bolder;
-  		font-size: 1.2rem;
+  		font-size: 1.5rem;
   		cursor: pointer;
   		padding: 0;
   		outline: none;
 		}
-
+		@media screen and (max-width: 768px) {
+			.search-bar{
+		width: 430px;
+  		height: 60px;
+		top: 35%;
+		}
+    	}
+		@media screen and (max-width: 480px) {
+		.search-bar{
+		width: 230px;
+  		height: 45px;
+		top: 30%;
+		left:50%;
+		righ:50%;
+		}
+		.search-bar input{
+			font-size:16px ;
+		}
+		.search-bar button{
+			font-size: 1rem;
+			text-align:center;
+		}
+		}
 `

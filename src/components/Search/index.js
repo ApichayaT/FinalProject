@@ -1,6 +1,6 @@
 import React, {useState}  from 'react'
 import {Container,Card,SearchH1,Form } from './SearchElements'
-import { FaSearch } from "react-icons/fa";
+
 
 const Search = () => {
   

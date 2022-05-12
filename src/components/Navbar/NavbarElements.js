@@ -23,9 +23,11 @@ export const Nav = styled.nav`
     border-radius: 30px;
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
-       
-        
     }
+    @media screen and (max-width: 480px) {
+    margin-left: 50px;
+    margin-right: 50px;
+	}
 `
 
 export const NavbarContainer = styled.div`
@@ -36,7 +38,7 @@ export const NavbarContainer = styled.div`
     width: 100%;
     padding: 0 24px;
     max-width: 1100px;
-    
+   
 `
 
 
@@ -48,7 +50,9 @@ export const NavLogo = styled(LinkR)`
     margin-left: 22px;
     margin-top:auto;
     margin-bottom:auto;
-    
+    @media screen and (max-width: 480px) {
+    margin-left: 5px;
+	}
 `
 
 
