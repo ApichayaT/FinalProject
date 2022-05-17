@@ -16,8 +16,8 @@ export const Nav = styled.nav`
     font-family: 'Roboto', sans-serif;
     position: sticky;
     top: 30px;
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 200px;
+    margin-right: 200px;
     z-index: 10;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
     border-radius: 30px;
@@ -32,13 +32,13 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     height: 80px;
     z-index: 1;
-    width: 100%;
-    padding: 0 24px;
-    max-width: 1100px;
-   
+    width: 100%; 
+    padding: 0 40px;  
+    max-width: 1000px;
+
 `
 
 
@@ -47,9 +47,9 @@ export const NavLogo = styled(LinkR)`
     cursor: pointer; 
     display: flex;
     align-items: center;
-    margin-left: 22px;
+    /* margin-left: 22px;
     margin-top:auto;
-    margin-bottom:auto;
+    margin-bottom:auto;  */
     @media screen and (max-width: 480px) {
     margin-left: 5px;
 	}
@@ -75,7 +75,7 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    margin-right: -22px;
+    margin-right: 70px;
     
     @media screen and (max-width: 768px) {
         display: none;
@@ -87,6 +87,20 @@ export const NavItem = styled.ul`
 `
 
 export const NavLinks = styled(LinkS)`
+    color: #010606;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    letter-spacing: 1px;
+    &.active {
+        border-bottom: 4px solid #01bf71; 
+        color: #01bf71;
+    }
+`
+export const NavRoute = styled(LinkR)`
     color: #010606;
     display: flex;
     align-items: center;
@@ -131,4 +145,25 @@ export const NavBtnLink = styled(LinkR)`
         color: #010606;
     }
 `
+export const NavBtnRouter = styled(LinkR)`
+    border-radius: 50px;
+    background: #01bf71;
+    white-space: nowrap;
+    padding: 10px 18px;
+    display: flex;
+    color: #010606;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #14D685;
+        color: #010606;
+    }
+`
+
 

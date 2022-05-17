@@ -11,6 +11,7 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  NavRoute,
   NavBtn,
   NavBtnLink
 } from './NavbarElements';
@@ -48,39 +49,39 @@ const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="/" onClick={toggleHome}>Home</NavLinks>
+              <NavRoute to="/" onClick={toggleHome}>Home</NavRoute>
             </NavItem>
             <NavItem>
-              <NavLinks to="search1"
+              <NavRoute to="search"
               smooth={true}
               duration={500}
               spy={true}
               exact='true'
               offset={-80}
-              >Search</NavLinks>
+              >Search</NavRoute>
             </NavItem>
             <NavItem>
-              <NavLinks to="calculator1"
+              <NavRoute to="calculator"
               smooth={true}
               duration={500}
               spy={true}
               exact='true'
               offset={-80}
-              >Calculator</NavLinks>
+              >Calculator</NavRoute>
             </NavItem>
-             <NavItem>
-              <NavLinks to="services"
+            <NavItem>
+              <NavRoute to="services"
               smooth={true}
               duration={500}
               spy={true}
               exact='true'
               offset={-80}
-              >Blog</NavLinks>
+              >Blog</NavRoute>
             </NavItem> 
           </NavMenu>
-          <NavBtn>
+           {/* <NavBtn>
             <NavBtnLink to="/signin">Sign In</NavBtnLink>
-          </NavBtn>
+          </NavBtn>  */}
         </NavbarContainer>
       </Nav>
       </IconContext.Provider>
@@ -88,4 +89,4 @@ const Navbar = ({ toggle }) => {
   )
 }
 
-export default Navbar;
+export default Navbar
