@@ -1,10 +1,11 @@
+
 import React, { useState } from "react";
 // import * as React from 'react';
 import { Form, Input, Button, Radio, Card, Select } from "antd";
 import "antd/dist/antd.css";
 
 const Calculator = () => {
-  const [result, setResult] = useState(0);
+const [result, setResult] = useState(0);
 
   // const onFinishFailed = (errorInfo) => {
   //   console.log("Failed:", errorInfo);
@@ -85,202 +86,204 @@ const Calculator = () => {
 
   return (
     <div
-      style={{
+    style={{
         display: "table",
         margin: "0 auto",
         justifyContent: "center",
         fontFamily: "Prompt, sans-serif"
-      }}
+    }}
     >
-      <Form
+    <Form
         name="basic"
         // labelCol={{
         //   span: 12,
         // }}
         wrapperCol={{
-          span: 7,
+        span: 7,
         }}
         onFinish={onFinish}
         // onFinishFailed={onFinishFailed}
         autoComplete="off"
-      >
+    >
         <h1
-          style={{
+        style={{
             fontSize: "48px",
             fontWeight: "600",
             marginTop: "120px",
             textAlign: "center",
-          }}
+            fontFamily: "Roboto, sans-serif"
+            
+        }}
         >
-          Calories Calculator
+        Calories Calculator
         </h1>
         <Form.Item
-          label="เพศ"
-          name="layout"
-          style={{ justifyContent: "center" }}
-          rules={[
-            {
-              required: true,
-              message: "Please input your gender!",
-            },
-          ]}
+        label="เพศ"
+        name="layout"
+        style={{ justifyContent: "center" }}
+        rules={[
+        {
+        required: true,
+        message: "Please input your gender!",
+        },
+        ]}
         >
-          <Radio.Group name="radiogroup">
+        <Radio.Group name="radiogroup">
             <Radio value="male">ชาย</Radio>
             <Radio value="female">หญิง</Radio>
-          </Radio.Group>
+        </Radio.Group>
         </Form.Item>
 
         <Form.Item
-          label="น้ำหนัก"
-          name="weight"
-          style={{ justifyContent: "center" }}
-          rules={[
+        label="น้ำหนัก"
+        name="weight"
+        style={{ justifyContent: "center" }}
+        rules={[
             {
-              required: true,
-              message: "Please input your weight!",
+            required: true,
+            message: "Please input your weight!",
             },
-          ]}
+        ]}
         >
-          <Input placeholder="กิโลกรัม" style={{ borderRadius: "7px" }} />
+        <Input placeholder="กิโลกรัม" style={{ borderRadius: "7px" }} />
         </Form.Item>
 
         <Form.Item
-          label="ส่วนสูง"
-          name="height"
-          style={{ justifyContent: "center" }}
-          rules={[
+        label="ส่วนสูง"
+        name="height"
+        style={{ justifyContent: "center" }}
+        rules={[
             {
-              required: true,
-              message: "Please input your height!",
+            required: true,
+            message: "Please input your height!",
             },
-          ]}
+        ]}
         >
-          <Input placeholder="เซนติเมตร" style={{ borderRadius: "7px" }} />
+        <Input placeholder="เซนติเมตร" style={{ borderRadius: "7px" }} />
         </Form.Item>
 
         <Form.Item
-          label="อายุ"
-          name="age"
-          style={{ justifyContent: "center" }}
-          rules={[
+        label="อายุ"
+        name="age"
+        style={{ justifyContent: "center" }}
+        rules={[
             {
-              required: true,
-              message: "Please input your age!",
+            required: true,
+            message: "Please input your age!",
             },
-          ]}
+        ]}
         >
-          <Input placeholder="ปี" style={{ borderRadius: "7px" }} />
+        <Input placeholder="ปี" style={{ borderRadius: "7px" }} />
         </Form.Item>
 
         <Card
-          style={{
+        style={{
             width: "600px",
             justifyContent: "center",
             border: "0.5px solid#000",
             borderRadius: "10px",
             backgroundColor: "#bddaff",
-          }}
+        }}
         >
-          <p
+        <p
             style={{ textAlign: "center", fontSize: "24px", fontWeight: "600" }}
-          >
+        >
             โปรดใส่ข้อมูลเพิ่มเติม
-          </p>
-          <Form.Item
+        </p>
+        <Form.Item
             name="target"
             label="เป้าหมายของคุณคือ"
             style={{ justifyContent: "center" }}
             rules={[
-              {
+            {
                 required: true,
                 message: "Please choose your target!",
-              },
+            },
             ]}
-          >
+        >
             <Select
-              placeholder="เลือกเป้าหมาย"
+            placeholder="เลือกเป้าหมาย"
               // onChange={onGenderChange}
-              allowClear
+            allowClear
             >
-              <Select.Option value="lose">ลดน้ำหนัก</Select.Option>
-              <Select.Option value="stable">คงที่น้ำหนัก</Select.Option>
-              <Select.Option value="gain">เพิ่มน้ำหนัก</Select.Option>
+            <Select.Option value="lose">ลดน้ำหนัก</Select.Option>
+            <Select.Option value="stable">คงที่น้ำหนัก</Select.Option>
+            <Select.Option value="gain">เพิ่มน้ำหนัก</Select.Option>
             </Select>
-          </Form.Item>
+        </Form.Item>
 
-          <p
+        <p
             style={{ textAlign: "center", fontSize: "17px", fontWeight: "600" }}
-          >
+        >
             คุณทำกิจกรรมต่อวันมากน้อยแค่ไหน
-          </p>
+        </p>
           {/* <Form.Item name="targetA" valuePropName="checked"> */}
           {/* <Radio.Group onChange={onChange} value={activity} name="activity"> */}
-          <Radio.Group onChange={onChange} value={value}>
+        <Radio.Group onChange={onChange} value={value}>
             <Radio value={1}>
-              น้อยมาก - ทำงานออฟฟิต นั่งหน้าจอคอม แทบไม่ได้ออกกำลังกาย
+            น้อยมาก - ทำงานออฟฟิต นั่งหน้าจอคอม แทบไม่ได้ออกกำลังกาย
             </Radio>
             <Radio value={2}>
-              น้อย - ออกกำลังกายแบบเบาๆ 1-3 ชั่วโมง / สัปดาห์
+            น้อย - ออกกำลังกายแบบเบาๆ 1-3 ชั่วโมง / สัปดาห์
             </Radio>
             <Radio value={3}>ปานกลาง - ออกกำลังกาย 3-5 ชั่วโมงต่อสัปดาห์</Radio>
             <Radio value={4}>
-              สูง - ออกกำลังกายอย่างหนักวันละ 1 ชั่วโมงทุกวัน
+            สูง - ออกกำลังกายอย่างหนักวันละ 1 ชั่วโมงทุกวัน
             </Radio>
             <Radio value={5}>
-              สูงมาก - ออกกำลังกายอย่างหนักวันละ 2 ชั่วโมงเป็นอย่างต่ำทุกวัน
+            สูงมาก - ออกกำลังกายอย่างหนักวันละ 2 ชั่วโมงเป็นอย่างต่ำทุกวัน
               {/* {this.state.value === 4 ? <Input style={{ width: 100, marginLeft: 10 }} /> : null} */}
             </Radio>
-          </Radio.Group>
+        </Radio.Group>
           {/* </Form.Item> */}
         </Card>
 
         <Form.Item
-          style={{
+        style={{
             marginTop: "20px",
             justifyContent: "center",
             display: "flex",
             alignItems: "center",
             textAlign: "center",
-          }}
+        }}
           // wrapperCol={{
           //   offset: 13,
           //   span: 16,
           // }}
         >
-          <Button
+        <Button
             type="primary"
             htmlType="submit"
             style={{ borderRadius: "7px", background: "#01bf71" }}
             onClick={handleToggle}
-          >
+        >
             คำนวณ
-          </Button>
+        </Button>
         </Form.Item>
-      </Form>
-      <div
+    </Form>
+    <div
         style={{
-          display: "table",
-          margin: "0 auto",
-          justifyContent: "center",
-          textAlign: "center",
+        display: "table",
+        margin: "0 auto",
+        justifyContent: "center",
+        textAlign: "center",
         }}
-      >
+    >
         <Card
-          title="แคลอรี่ที่แนะนำต่อวัน"
-          bordered={false}
-          style={{
+        title="แคลอรี่ที่แนะนำต่อวัน"
+        bordered={false}
+        style={{
             borderRadius: "10px",
             border: "0.5px solid#000",
             width: "270px",
             marginBottom: "20px",
-          }}
+        }}
         >
-          <p style={{ fontSize: "35px", fontWeight: "600" }}>{result} Cal</p>
+        <p style={{ fontSize: "35px", fontWeight: "600" }}>{result} Cal</p>
         </Card>
-      </div>
     </div>
-  );
-};
+    </div>
+)
+}
 
-export default Calculator;
+export default Calculator

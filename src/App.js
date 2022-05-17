@@ -5,6 +5,7 @@ import Home from './pages';
 import SigninPage from './pages/signin'
 import SearchPage from './pages/search'
 import CalculatorPage from './pages/calculator'
+import BlogPage from './pages/BlogPage'
 import BlogPage1 from './pages/ฺฺBlogpages/blog1';
 import BlogPage2 from './pages/ฺฺBlogpages/blog2';
 import BlogPage3 from './pages/ฺฺBlogpages/blog3';
@@ -19,7 +20,8 @@ function App() {
         <Route path="/" element={<Home/>} exact />
         <Route path="/signin" element={<SigninPage/>} exact />
         <Route path="/search" element={<SearchPage/>} exact />
-        <Route path="/calculator" element={<CalculatorPage/>} exact />
+        <Route path="/calculator" element={<CalculatorPage/>} exact /> 
+        <Route path="/blog" element={<BlogPage/>} exact /> 
         <Route path="/blog1"  element={<BlogPage1/>} exact />
         <Route path="/blog2"  element={<BlogPage2/>} exact />
         <Route path="/blog3"  element={<BlogPage3/>} exact />

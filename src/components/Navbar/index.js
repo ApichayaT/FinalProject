@@ -10,10 +10,7 @@ import {
   MobileIcon,
   NavMenu,
   NavItem,
-  NavLinks,
   NavRoute,
-  NavBtn,
-  NavBtnLink
 } from './NavbarElements';
 
 
@@ -34,10 +31,9 @@ const Navbar = ({ toggle }) => {
 
   const toggleHome = () => {
     scroll.scrollToTop();
-  };
+  }
 
   return (
-    <>
     <IconContext.Provider value={{ color: '#fff'}}>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
@@ -52,7 +48,7 @@ const Navbar = ({ toggle }) => {
               <NavRoute to="/" onClick={toggleHome}>Home</NavRoute>
             </NavItem>
             <NavItem>
-              <NavRoute to="search"
+              <NavRoute to="/search"
               smooth={true}
               duration={500}
               spy={true}
@@ -61,7 +57,7 @@ const Navbar = ({ toggle }) => {
               >Search</NavRoute>
             </NavItem>
             <NavItem>
-              <NavRoute to="calculator"
+              <NavRoute to="/calculator"
               smooth={true}
               duration={500}
               spy={true}
@@ -70,7 +66,7 @@ const Navbar = ({ toggle }) => {
               >Calculator</NavRoute>
             </NavItem>
             <NavItem>
-              <NavRoute to="services"
+              <NavRoute to="/blog"
               smooth={true}
               duration={500}
               spy={true}
@@ -79,13 +75,10 @@ const Navbar = ({ toggle }) => {
               >Blog</NavRoute>
             </NavItem> 
           </NavMenu>
-           {/* <NavBtn>
-            <NavBtnLink to="/signin">Sign In</NavBtnLink>
-          </NavBtn>  */}
         </NavbarContainer>
       </Nav>
       </IconContext.Provider>
-    </>
+    
   )
 }
 

@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Calculator from '../components/Calculator'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import ScrollToTop from '../components/ScrollToTop';
+import ScrollToTop from '../components/ScrollToTop'
 
 const CalculatorPage = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,10 +13,10 @@ const CalculatorPage = () => {
 
   return (
     <>
-        <Navbar />
+        <Navbar toggle={toggle} />
         <Calculator />
         <Footer />
-        <ScrollToTop/>
+        <ScrollToTop />
     </>
   )
 }

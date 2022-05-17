@@ -86,12 +86,13 @@ export const NavItem = styled.ul`
     height: 80px;
 `
 
-export const NavLinks = styled(LinkS)`
+/*export const NavLinks = styled(LinkS)`
     color: #010606;
     display: flex;
     align-items: center;
     text-decoration: none;
     padding: 0 1rem;
+    margin-top: 0.5rem;
     height: 100%;
     cursor: pointer;
     letter-spacing: 1px;
@@ -99,19 +100,20 @@ export const NavLinks = styled(LinkS)`
         border-bottom: 4px solid #01bf71; 
         color: #01bf71;
     }
-`
+`*/
 export const NavRoute = styled(LinkR)`
     color: #010606;
     display: flex;
     align-items: center;
     text-decoration: none;
     padding: 0 1rem;
+    margin-top:0.5rem ;
     height: 100%;
     cursor: pointer;
     letter-spacing: 1px;
     &.active {
         border-bottom: 4px solid #01bf71; 
-        color: #01bf71;
+        color: #14D685;
     }
 `
 
@@ -142,7 +144,7 @@ export const NavBtnLink = styled(LinkR)`
     &:hover {
         transition: all 0.2s ease-in-out;
         background: #14D685;
-        color: #010606;
+        color: #010606 !important;
     }
 `
 export const NavBtnRouter = styled(LinkR)`
@@ -151,7 +153,7 @@ export const NavBtnRouter = styled(LinkR)`
     white-space: nowrap;
     padding: 10px 18px;
     display: flex;
-    color: #010606;
+    color: #010606!important;
     font-size: 16px;
     outline: none;
     border: none;
@@ -162,7 +164,7 @@ export const NavBtnRouter = styled(LinkR)`
     &:hover {
         transition: all 0.2s ease-in-out;
         background: #14D685;
-        color: #010606;
+        color: #010606!important;
     }
 `
 

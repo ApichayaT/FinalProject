@@ -11,15 +11,13 @@ const Search = () => {
       <SearchH1>SEARCH</SearchH1>
         <Form>
         <div class="search-bar">
-	        <input type="text" placeholder="search..." />
-	        <button>go!</button>
+          <input type="text" placeholder="search..." />
+          <button>go!</button>
           </div>
         </Form>
       </Card>
             
     </Container>
-    
-    
     </div>
     
 
