@@ -13,9 +13,9 @@ import {
     BtnWrap,
     ImgWrap,
     Img
-} from './InfoElements'
+} from './InfoElements2'
 
-const InfoSection = ({
+const InfoSection2 = ({
     lightBg,
     id,
     imgStart,
@@ -42,7 +42,7 @@ const InfoSection = ({
                         <Heading lightText={lightText}>{headline}</Heading>
                         <Subtitle darkText={darkText}>{description}</Subtitle>
                         <BtnWrap>
-                            <Button to="/search"
+                            <Button to="/calculator"
                             smooth={true}
                             duration={500}
                             spy={true}
@@ -67,4 +67,4 @@ const InfoSection = ({
   )
 }
 
-export default InfoSection
+export default InfoSection2

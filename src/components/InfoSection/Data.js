@@ -14,7 +14,7 @@ export const homeObjOne = {
     primary: true,
     darkText: false
 }
-
+/*
 export const homeObjTwo = {
     id: 'calculator1',
     lightBg: true,
@@ -30,7 +30,7 @@ export const homeObjTwo = {
     dark: false,
     primary: false,
     darkText: true
-}
+}*/
 
 // export const homeObjThree = {
 //     id: 'signup',
