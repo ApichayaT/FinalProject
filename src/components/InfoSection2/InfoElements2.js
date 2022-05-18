@@ -19,6 +19,12 @@ export const InfoWrapper = styled.div`
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
+    @media screen and (max-width: 768px) {
+        
+    }
+    @media screen and (max-width: 480px) {
+        height: 700px;
+    }
 `
 
 export const InfoRow = styled.div`
@@ -66,9 +72,10 @@ export const TextWrapper = styled.div`
 
 export const TopLine = styled.p`
     color: #01bf71;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 16px;
     font-weight: 700;
+    font-family: "Prompt",Sans-serif;
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 16px;
@@ -98,7 +105,12 @@ export const Subtitle = styled.p`
 export const BtnWrap = styled.div`
     display: flex;
     justify-content: flex-start;
-    
+    @media screen and (max-width: 768px) {
+        margin-left: 38%;
+    }
+    @media screen and (max-width: 480px) {
+        margin-left: 30%;
+    }
 
 `
 

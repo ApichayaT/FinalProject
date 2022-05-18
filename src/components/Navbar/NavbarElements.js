@@ -63,12 +63,11 @@ export const MobileIcon = styled.div`
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(-100%, 70%);
+        transform: translate(-100%, 50%);
         font-size: 1.8rem;
         cursor: pointer; 
     }
 `
-
 
 export const NavMenu = styled.ul`
     display: flex;
