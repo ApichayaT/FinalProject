@@ -30,10 +30,10 @@ const HeroSection = () => {
         <HeroContent>
             <HeroH1>Better body, Better life.</HeroH1>
             <HeroP>
-                Sign up for a new account today and recieve $250 in credits towards your next payment.
+            ให้เว็บไซต์ของเราเป็นตัวช่วยให้คุณมีสุขภาพที่ดีขึ้นได้ คุณสามารถค้นหาจำนวนแคลอรี่ของอาหารในและ<br></br>รับประทานให้เหมาะสมในทุกๆวันของคุณ
             </HeroP>
             
-            <SignInBtnLink to="/signin"
+            <SignInBtnLink to="/search"
             onMouseEnter={onHover} 
             onMouseLeave={onHover}
             primary='true'

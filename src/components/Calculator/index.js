@@ -3,7 +3,7 @@ import React, { useState } from "react";
 // import * as React from 'react';
 import { Form, Input, Button, Radio, Card, Select } from "antd";
 import "antd/dist/antd.css";
-
+import {Container} from "./CalculatorElements"
 const Calculator = () => {
 const [result, setResult] = useState(0);
 
@@ -85,12 +85,13 @@ const [result, setResult] = useState(0);
   };
 
   return (
-    <div
+    <Container
     style={{
         display: "table",
         margin: "0 auto",
         justifyContent: "center",
         fontFamily: "Prompt, sans-serif"
+        
     }}
     >
     <Form
@@ -165,7 +166,9 @@ const [result, setResult] = useState(0);
         <Form.Item
         label="อายุ"
         name="age"
-        style={{ justifyContent: "center" }}
+        style={{ justifyContent: "center"
+                
+                }}
         rules={[
             {
             required: true,
@@ -282,7 +285,7 @@ const [result, setResult] = useState(0);
         <p style={{ fontSize: "35px", fontWeight: "600" }}>{result} Cal</p>
         </Card>
     </div>
-    </div>
+    </Container>
 )
 }
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ Fragment } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages';
@@ -12,6 +12,7 @@ import BlogPage3 from './pages/ฺฺBlogpages/blog3';
 import BlogPage4 from './pages/ฺฺBlogpages/blog4';
 import BlogPage5 from './pages/ฺฺBlogpages/blog5';
 import BlogPage6 from './pages/ฺฺBlogpages/blog6';
+import ScrollButton from './components/ScrollButton';
 
 function App() {
   return (
@@ -29,7 +30,11 @@ function App() {
         <Route path="/blog5"  element={<BlogPage5/>} exact />
         <Route path="/blog6"  element={<BlogPage6/>} exact />
       </Routes>
+      <Fragment>
+        <ScrollButton />
+      </Fragment>
     </Router>
+      
   );
 }
 

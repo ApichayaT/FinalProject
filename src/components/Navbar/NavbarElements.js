@@ -107,12 +107,12 @@ export const NavRoute = styled(LinkR)`
     align-items: center;
     text-decoration: none;
     padding: 0 1rem;
-    margin-top:0.5rem ;
+    margin-top: 0.5rem ;
     height: 100%;
     cursor: pointer;
     letter-spacing: 1px;
     &.active {
-        border-bottom: 4px solid #01bf71; 
+        border-bottom: 5px solid #01bf71; 
         color: #14D685;
     }
 `

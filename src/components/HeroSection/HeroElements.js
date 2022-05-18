@@ -71,10 +71,11 @@ export const HeroH1 = styled.h1`
 export const HeroP = styled.p`
     margin-top: 24px;
     color: #fff;
-    font-size: 24px;
+    font-size: 26px;
     text-align: center;
+    letter-spacing: 1px;
     max-width: 600px;
-
+    font-family: 'Prompt', sans-serif;
     @media screen and (max-width: 768px) {
         font-size: 24px;
     }

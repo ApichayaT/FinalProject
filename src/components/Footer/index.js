@@ -37,11 +37,11 @@ const Footer = () => {
                             <FooterLink to="/">Terms of Services</FooterLink>
                     </FooterLinkItems>
                     <FooterLinkItems>
-                        <FooterLinkTitle>Videos</FooterLinkTitle>
-                            <FooterLink to="/">Submit Video</FooterLink>
-                            <FooterLink to="/">Ambassadors</FooterLink>
-                            <FooterLink to="/">Agency</FooterLink>
-                            <FooterLink to="/">Influencer</FooterLink>
+                        <FooterLinkTitle>Health & Diet</FooterLinkTitle>
+                            <FooterLink to="/">Healthy Fact</FooterLink>
+                            <FooterLink to="/">Calculator</FooterLink>
+                            <FooterLink to="/">Exercise</FooterLink>
+                            <FooterLink to="/">Calories Monitor</FooterLink>
                     </FooterLinkItems>
                 </FooterLinksWrapper>
                 <FooterLinksWrapper>
@@ -83,7 +83,7 @@ const Footer = () => {
             </SocialMedia>
         </FooterWrap>
     </FooterContainer>
-  )
+)
 }
 
 export default Footer
