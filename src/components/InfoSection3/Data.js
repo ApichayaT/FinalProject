@@ -1,5 +1,5 @@
 export const homeObjThree = {
-    id: 'Daily',
+    id: 'Daily1',
     lightBg: true,
     lightText: false,
     lightTextDesc: false,

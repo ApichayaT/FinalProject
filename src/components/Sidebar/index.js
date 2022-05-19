@@ -21,7 +21,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                 <SidebarRoute to="/search" onClick={toggle}> Search</SidebarRoute>
                 <SidebarRoute to="/calculator" onClick={toggle}> Calculator</SidebarRoute> 
                 <SidebarRoute to="/daily" onClick={toggle}> Daily</SidebarRoute> 
-                <SidebarRoute to="services" onClick={toggle}> Blog</SidebarRoute> 
+                <SidebarRoute to="/blog/" onClick={toggle}> Blog</SidebarRoute> 
             </SidebarMenu>
             {/* <SideBtnWrap>
                 <SidebarRoute to='/signin'>Sign In</SidebarRoute>

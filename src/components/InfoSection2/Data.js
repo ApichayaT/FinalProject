@@ -1,5 +1,5 @@
 export const homeObjTwo = {
-    id: 'calculator',
+    id: 'calculator1',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
