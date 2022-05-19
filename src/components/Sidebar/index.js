@@ -18,8 +18,9 @@ const Sidebar = ({ isOpen, toggle }) => {
         <SidebarWrapper>
             <SidebarMenu>
                 <SidebarRoute to="/" onClick={toggle}> Home</SidebarRoute>
-                 <SidebarRoute to="/search" onClick={toggle}> Search</SidebarRoute>
+                <SidebarRoute to="/search" onClick={toggle}> Search</SidebarRoute>
                 <SidebarRoute to="/calculator" onClick={toggle}> Calculator</SidebarRoute> 
+                {/* <SidebarRoute to="/daily" onClick={toggle}> Daily</SidebarRoute>  */}
                 <SidebarRoute to="services" onClick={toggle}> Blog</SidebarRoute> 
             </SidebarMenu>
             {/* <SideBtnWrap>

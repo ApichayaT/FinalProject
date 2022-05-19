@@ -66,6 +66,15 @@ const Navbar = ({ toggle }) => {
               >Calculator</NavRoute>
             </NavItem>
             <NavItem>
+              <NavRoute to="/daily"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'
+              offset={-80}
+              >Daily</NavRoute>
+            </NavItem> 
+            <NavItem>
               <NavRoute to="/blog"
               smooth={true}
               duration={500}

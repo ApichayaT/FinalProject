@@ -28,7 +28,7 @@ const Services = () => {
                 <ServicesH2>Work From Home ในช่วง COVID-19 กับน้ำหนักที่เพิ่มขึ้น</ServicesH2>
                 <ServicesP>จากสถานการณ์การระบาดของไวรัส COVID-19 ทำให้หลายคน มีโอกาสที่จะอยู่บ้านกันมากขึ้น ทั้งการถูกกักตัวหรือแม้แต่ Work From Home (WFH) ก็ตาม…</ServicesP>
                 <BlogBtn >
-                    <BlogBtnLink to="/blog1">READ MORE</BlogBtnLink>
+                    <BlogBtnLink to="/blog/Work-From-Home/">READ MORE</BlogBtnLink>
                 </BlogBtn>
             </ServicesCard>
             <ServicesCard>
@@ -36,7 +36,7 @@ const Services = () => {
                 <ServicesH2>คีโตไดเอท คืออะไร ลดน้ำหนักแบบคีโตเจนิค ไดเอท</ServicesH2>
                 <ServicesP>ปัจจุบันมีหลากหลายวิธี ที่เป็นที่นิยมกันอย่างแพร่หลาย สำหรับการลดน้ำหนักด้วยวิธีการต่างๆ สำหรับสาวๆ หรือหนุ่มๆ ที่ชื่นชอบการไดเอท เพื่อลดความอ้วน…</ServicesP>
                 <BlogBtn >
-                    <BlogBtnLink to="/blog2">READ MORE</BlogBtnLink>
+                    <BlogBtnLink to="/blog/Ketogenic-Diet/">READ MORE</BlogBtnLink>
                 </BlogBtn>
             </ServicesCard>
             <ServicesCard>
@@ -44,7 +44,7 @@ const Services = () => {
                 <ServicesH2>ไดเอทแบบมีความสุข อยากกินต้องได้กิน</ServicesH2>
                 <ServicesP>ใครว่าการไดเอทคือการต้องอดหรือต้องหยุดกินสิ่งที่อยากกิน นั้นไม่จริงเลย เพราะวิธีไดเอทที่ถูกต้องคือการเลือกกินสิ่งที่มีคุณภาพในปริมาณที่เหมาะสม…</ServicesP>
                 <BlogBtn >
-                    <BlogBtnLink to="/blog3">READ MORE</BlogBtnLink>
+                    <BlogBtnLink to="/blog/Diet-Techniques/">READ MORE</BlogBtnLink>
                 </BlogBtn>
             </ServicesCard>
             <ServicesCard>
@@ -52,7 +52,7 @@ const Services = () => {
                 <ServicesH2>วิตามิน ‘บำรุงสายตา’ เพิ่มการมองเห็น ป้องกันตาเสื่อมก่อนวัย</ServicesH2>
                 <ServicesP>‘วิตามินบำรุงสายตา’ ณ ช่วงเวลานี้คงมีหลายคนที่กำลังต้องการอาหารเสริมหรือวิตามินบำรุงสายตาอยู่ไม่น้อย เพราะไลฟ์สไตล์การใช้ชีวิต...</ServicesP>
                 <BlogBtn >
-                    <BlogBtnLink to="/blog4">READ MORE</BlogBtnLink>
+                    <BlogBtnLink to="/blog/Vitamins/">READ MORE</BlogBtnLink>
                 </BlogBtn>
             </ServicesCard>
             <ServicesCard>
@@ -60,7 +60,7 @@ const Services = () => {
                 <ServicesH2>ความจริงของ โภชนาการการคุมอาหาร ที่คุณอาจยังไม่รู้</ServicesH2>
                 <ServicesP>“โภชนาการการคุมอาหาร” หรือสิ่งที่หลายๆคนเรียกว่าไว้ว่าการคุมอาหาร ซึ่งการคุมอาหารสำหรับผู้ที่มีน้ำหนักเกินนั้นมีหลายตำราได้ให้ข้อเสนอไว้…</ServicesP>
                 <BlogBtn >
-                    <BlogBtnLink to="/blog5">READ MORE</BlogBtnLink>
+                    <BlogBtnLink to="/blog/Nutrition/">READ MORE</BlogBtnLink>
                 </BlogBtn>
             </ServicesCard>
             <ServicesCard>
@@ -68,7 +68,7 @@ const Services = () => {
                 <ServicesH2>อ้วน หรือเปล่า? วิธีเช็คง่ายๆก่อนสายเกินแก้</ServicesH2>
                 <ServicesP>อ้วนแล้วหรือยัง? คำถามที่ใครหลายคนไม่กล้าตั้งคำถาม ความอ้วนเป็นสิ่งที่เกิดขึ้นง่ายและต้องใช้ความพยายามเป็นอย่างมากในการจะกำจัดไป…</ServicesP>
                 <BlogBtn >
-                    <BlogBtnLink to="/blog6">READ MORE</BlogBtnLink>
+                    <BlogBtnLink to="/blog/Fat-or-not/">READ MORE</BlogBtnLink>
                 </BlogBtn>
             </ServicesCard>
 

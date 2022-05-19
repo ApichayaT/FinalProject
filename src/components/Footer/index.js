@@ -62,16 +62,16 @@ const Footer = () => {
                     <SocialLogo to='/' onClick={toggleHome}>Calories</SocialLogo>
                     <WebsiteRights>Calories © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                     <SocialIcons>
-                        <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+                        <SocialIconLink /*href="" target="_blank" aria-label="Facebook"*/>
                             <FaFacebook />
                         </SocialIconLink>
-                        <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+                        <SocialIconLink /*href="" target="_blank" aria-label="Instagram"*/>
                             <FaInstagram />
                         </SocialIconLink>
-                        <SocialIconLink href="/" target="_blank" aria-label="Youtube">
+                        <SocialIconLink /*href="" target="_blank" aria-label="Youtube"*/>
                             <FaYoutube />
                         </SocialIconLink>
-                        <SocialIconLink href="/" target="_blank" aria-label="Twitter">
+                        <SocialIconLink /*href="" target="_blank" aria-label="Twitter"*/>
                             <FaTwitter />
                         </SocialIconLink>
                     </SocialIcons>

@@ -119,6 +119,12 @@ export const ImgWrap = styled.div`
     max-width: 555px;
     height: 100%
     
+    @media screen and (max-width: 768px) {
+          
+        }
+        @media screen and (max-width: 480px) {
+            
+        }
 `
 
 export const Img = styled.img`

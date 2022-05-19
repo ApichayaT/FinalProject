@@ -2,7 +2,7 @@ import React from 'react'
 import ScrollToTop from '../components/ScrollToTop'
 import SignIn from '../components/Signin'
 
-const TestPage = () => {
+const DailyPage = () => {
   return (
     <>
       <ScrollToTop />
@@ -11,4 +11,4 @@ const TestPage = () => {
   )
 }
 
-export default TestPage
+export default DailyPage

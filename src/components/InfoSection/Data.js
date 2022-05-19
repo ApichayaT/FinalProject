@@ -1,18 +1,18 @@
 export const homeObjOne = {
-    id: 'search1',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
+    id: 'search',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
     topLine: 'การทำงาน',
     headline: 'Search',
     description: 'แคลอรี่หรืออาหารที่คุณกินเข้าไปแต่ละวันนั้นมีความสำคัญต่อการสร้างความสมดุลของน้ำหนักที่ดี ดังนั้นหากคุณต้องการลดน้ำหนัก การกำหนดแคลอรี่ให้เหมาะสมกับปริมาณที่คุณจำเป็นต้องเผาผลาญจึงเป็นเรื่องที่คุณต้องให้ความใส่ใจ ซึ่งเราจะเป็นตัวช่วยในการค้นหาจำนวนแคลอรี่และข้อมูลทางโภชนาการ',
     buttonLabel: 'Get started',
     imgStart: false,
-    img: require('../../images/svg-1.svg').default,    
+    img: require('../../images/svg-2.svg').default,    
     alt: 'Car',
-    dark: true,
-    primary: true,
-    darkText: false
+    dark: false,
+    primary: false,
+    darkText: true
 }
 /*
 export const homeObjTwo = {
