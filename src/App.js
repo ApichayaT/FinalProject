@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages';
 import SigninPage from './pages/signin'
-import SearchPage from './pages/search'
+import TestSearchPage from './pages/testsearch'
 import CalculatorPage from './pages/calculator'
 import DailyPage from './pages/daily'
 import BlogPage from './pages/BlogPage'
@@ -21,7 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} exact />
         <Route path="/signin" element={<SigninPage/>} exact />
-        <Route path="/search" element={<SearchPage/>} exact />
+        <Route path="/search" element={<TestSearchPage/>} exact />
         <Route path="/calculator" element={<CalculatorPage/>} exact /> 
         <Route path="/daily" element={<DailyPage/>} exact /> 
         <Route path="/blog/" element={<BlogPage/>}exact/> 
