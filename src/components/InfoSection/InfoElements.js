@@ -97,7 +97,7 @@ export const Heading = styled.h1`
 export const Subtitle = styled.p`
     max-width: 440px;
     margin-bottom: 35px;
-    font-size: 17px;
+    font-size: 17.5px;
     line-height: 28px;
     letter-spacing: 1px;
     font-family: "Prompt",Sans-serif;

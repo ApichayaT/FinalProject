@@ -16,8 +16,8 @@ export const Nav = styled.nav`
     font-family: 'Roboto', sans-serif;
     position: sticky;
     top: 30px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 250px;
+    margin-right: 250px;
     z-index: 10;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
     border-radius: 30px;
@@ -36,7 +36,7 @@ export const NavbarContainer = styled.div`
     height: 80px;
     z-index: 1;
     width: 100%; 
-    padding: 0 40px;  
+    padding: 0 20px;  
     max-width: 1000px;
 
 `
@@ -105,6 +105,7 @@ export const NavRoute = styled(LinkR)`
     display: flex;
     align-items: center;
     text-decoration: none;
+    font-size:18px ;
     padding: 0 1rem;
     margin-top: 0.5rem ;
     height: 100%;

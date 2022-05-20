@@ -14,10 +14,12 @@ import BlogPage4 from './pages/ฺฺBlogpages/blog4';
 import BlogPage5 from './pages/ฺฺBlogpages/blog5';
 import BlogPage6 from './pages/ฺฺBlogpages/blog6';
 import ScrollButton from './components/ScrollButton';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+        <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home/>} exact />
         <Route path="/signin" element={<SigninPage/>} exact />

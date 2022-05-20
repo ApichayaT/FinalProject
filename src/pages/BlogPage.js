@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Blogg from '../components/Blogpage'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import ScrollToTop from '../components/ScrollToTop'
+// import ScrollToTop from '../components/ScrollToTop'
 import Sidebar from '../components/Sidebar'
 const BlogPage = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +17,6 @@ const BlogPage = () => {
         <Navbar toggle={toggle} />
         <Blogg />
         <Footer />
-        <ScrollToTop />
     </div>
   )
 }

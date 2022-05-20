@@ -3,7 +3,7 @@ import Search from '../components/TestSearch'
 import Sidebar from '../components/Sidebar'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer';
-import ScrollToTop from '../components/ScrollToTop';
+// import ScrollToTop from '../components/ScrollToTop';
 
 const SearchPage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +19,6 @@ const SearchPage = () => {
       <Navbar toggle={toggle} />
       <Search />
       <Footer />
-      <ScrollToTop />
     </>
   )
 }
