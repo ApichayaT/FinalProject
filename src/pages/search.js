@@ -11,6 +11,7 @@ const SearchPage = () => {
     const toggle = () => {
         setIsOpen(!isOpen);
     }
+    
 
   return (
     <>

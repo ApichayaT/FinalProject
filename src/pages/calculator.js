@@ -5,11 +5,12 @@ import Footer from '../components/Footer'
 import Sidebar from '../components/Sidebar'
 
 const CalculatorPage = () => {
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-    const toggle = () => {
-        setIsOpen(isOpen);
-    }
+  const toggle = () => {
+      setIsOpen(!isOpen);
+  }
+  
 
   return (
     <>
