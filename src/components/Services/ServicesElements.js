@@ -84,7 +84,7 @@ export const ServicesH1 = styled.h1`
 `
 
 export const ServicesH2 = styled.h2`
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: 'Prompt', sans-serif;
     margin-bottom: 10px;
 `

@@ -26,22 +26,22 @@ const Services = () => {
             <ServicesCard>
                 <ServicesIcon src={Icon1} />
                 <ServicesH2>Work From Home ในช่วง COVID-19 กับน้ำหนักที่เพิ่มขึ้น</ServicesH2>
-                <ServicesP>จากสถานการณ์การระบาดของไวรัส COVID-19 ทำให้หลายคน มีโอกาสที่จะอยู่บ้านกันมากขึ้น ทั้งการถูกกักตัวหรือแม้แต่ Work From Home (WFH) ก็ตาม…</ServicesP>
+                <ServicesP>จากสถานการณ์การระบาดของไวรัส COVID-19 ทำให้หลายคน มีโอกาสที่จะอยู่บ้านกันมากขึ้น ทั้งการถูกกักตัวหรือแม้แต่ Work From Home (WFH) </ServicesP>
                 <BlogBtn >
                     <BlogBtnLink to="/blog/Work-From-Home/">READ MORE</BlogBtnLink>
                 </BlogBtn>
             </ServicesCard>
             <ServicesCard>
                 <ServicesIcon src={Icon2} />
-                <ServicesH2>คีโตไดเอท คืออะไร ลดน้ำหนักแบบคีโตเจนิค ไดเอท</ServicesH2>
-                <ServicesP>ปัจจุบันมีหลากหลายวิธี ที่เป็นที่นิยมกันอย่างแพร่หลาย สำหรับการลดน้ำหนักด้วยวิธีการต่างๆ สำหรับสาวๆ หรือหนุ่มๆ ที่ชื่นชอบการไดเอท เพื่อลดความอ้วน…</ServicesP>
+                <ServicesH2>คีโตไดเอท คืออะไร การลดน้ำหนักแบบคีโตเจนิคไดเอท คืออะไร</ServicesH2>
+                <ServicesP>ปัจจุบันมีหลากหลายวิธี ที่เป็นที่นิยมอย่างแพร่หลาย สำหรับการลดน้ำหนักด้วยวิธีการต่างๆ สำหรับสาวๆ หรือหนุ่มๆ ที่ชื่นชอบการไดเอท เพื่อลดความอ้วน…</ServicesP>
                 <BlogBtn >
                     <BlogBtnLink to="/blog/Ketogenic-Diet/">READ MORE</BlogBtnLink>
                 </BlogBtn>
             </ServicesCard>
             <ServicesCard>
                 <ServicesIcon src={Icon3} />
-                <ServicesH2>ไดเอทแบบมีความสุข อยากกินต้องได้กิน</ServicesH2>
+                <ServicesH2>ไดเอทแบบมีความสุข อยากกินต้องได้กิน กินดีไม่มีอด</ServicesH2>
                 <ServicesP>ใครว่าการไดเอทคือการต้องอดหรือต้องหยุดกินสิ่งที่อยากกิน นั้นไม่จริงเลย เพราะวิธีไดเอทที่ถูกต้องคือการเลือกกินสิ่งที่มีคุณภาพในปริมาณที่เหมาะสม…</ServicesP>
                 <BlogBtn >
                     <BlogBtnLink to="/blog/Diet-Techniques/">READ MORE</BlogBtnLink>
@@ -65,7 +65,7 @@ const Services = () => {
             </ServicesCard>
             <ServicesCard>
                 <ServicesIcon src={Icon6} />
-                <ServicesH2>อ้วน หรือเปล่า? วิธีเช็คง่ายๆก่อนสายเกินแก้</ServicesH2>
+                <ServicesH2>ตอนนี้อ้วน หรือเปล่า? วิธีเช็คได้ง่ายๆ ก่อนสายเกินแก้</ServicesH2>
                 <ServicesP>อ้วนแล้วหรือยัง? คำถามที่ใครหลายคนไม่กล้าตั้งคำถาม ความอ้วนเป็นสิ่งที่เกิดขึ้นง่ายและต้องใช้ความพยายามเป็นอย่างมากในการจะกำจัดไป…</ServicesP>
                 <BlogBtn >
                     <BlogBtnLink to="/blog/Fat-or-not/">READ MORE</BlogBtnLink>
