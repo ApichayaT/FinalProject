@@ -7,7 +7,6 @@ import { List, Input, Radio, Row, Col, Divider, AutoComplete, Card } from "antd"
 import "antd/dist/antd.css";
 import Theme from "../TestSearch/testStyle.module.css";
 import { getFoodData } from "../../util/handleFirebase";
-
 const { Search } = Input;
 
 const TestSearch = () => {
@@ -24,7 +23,10 @@ const TestSearch = () => {
     // console.log(foodData);
   }, []);
   const getFoodforDB = async () => {
-    const data = await getFoodData();
+    // const data = await getFoodData();
+    const data = [{
+      name: 'ข้าว',
+    }]
     setAllfoodInfo(data)
     const menu = [];
     data.map((e) => {
@@ -109,19 +111,25 @@ const TestSearch = () => {
     <div
       style={{
         // display: "table",
-        margin: "100px 70px auto 70px",
+        margin: "180px 260px auto 260px",
         justifyContent: "center",
+        background: "#f9f9f9",
+        padding: "0 14rem",
+        height:"800px"
+        
       }}
       className={Theme.x}
     >
       <h1
         style={{
           fontSize: "48px",
-          fontWeight: "600",
+          fontWeight: "800",
+          color:"#01BF71",
           marginTop: "120px",
           textAlign: "center",
           // margin: "100px auto 0 0",
           margin: "0 auto",
+          paddingTop:"1rem"
         }}
       >
         SEARCH
@@ -142,15 +150,15 @@ const TestSearch = () => {
         <Input.Search 
         size="large" 
         placeholder="search food" 
-       />
+      />
       </AutoComplete>
       {food? <div>
         <Divider
           orientation="left"
           style={{
-            fontSize: "25px",
+            fontSize: "20px",
             fontWeight: "500",
-            margin: "40px auto 30px auto",
+            margin: "10px auto 10px auto",
           }}
         >
           รายละเอียด
@@ -158,36 +166,49 @@ const TestSearch = () => {
         
         <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
           <Col className="gutter-row" span={12}>
-            <h1
+            <div style={{
+              padding: "0 6rem",
+            }}>
+              <h1
               style={{
-                fontSize: "35px",
+                fontSize: "34px",
                 fontWeight: "600",
+
               }}
             >
               {food.name}
             </h1>
             <h3
               style={{
-                fontSize: "25px",
+                fontSize: "30px",
                 fontWeight: "500",
                 margin: "30px",
               }}
             >
               {food.energy} cal
             </h3>
-            <Doughnut data={data}
-            style={{
-              marginBottom: "50px",
-            }} />
-          </Col>
-          <Col className="gutter-row" span={12}>
-            <div>
-              <h2>สารอาหาร</h2>
+            
+            <Card title="สารอาหาร" extra={<a href="#"></a>} style={{ width: 320 ,fontSize:"17px",}} headStyle={{fontSize: "24px", fontWeight: "600"}}>
+              
               <h3>โปรตีน: {food?.protein} กรัม</h3>
               <h3>ไขมัน: {food?.fat} กรัม</h3>
               <h3>คาร์โบไฮเดต: {food?.carbohydrate} กรัม</h3>
               <h3>ใยอาหาร: {food?.fiber} กรัม</h3>
-              <h3>คอเลสเตอรอล: {food?.cholesterol} กรัม</h3>           
+              <h3>คอเลสเตอรอล: {food?.cholesterol} กรัม</h3>
+            </Card>           
+            </div>
+          </Col>
+          <Col className="gutter-row" span={12}>
+          
+            <div style={{
+              height: "420px",
+              width: "420px",
+              marginBottom: "50px"
+            }}>
+              <Doughnut data={data}
+            style={{
+              marginBottom: "50px",
+            }} />
             </div>
           </Col>
         </Row>
