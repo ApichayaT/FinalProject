@@ -23,10 +23,10 @@ const TestSearch = () => {
     // console.log(foodData);
   }, []);
   const getFoodforDB = async () => {
-    // const data = await getFoodData();
-    const data = [{
-      name: 'ข้าว',
-    }]
+      const data = await getFoodData();
+    // const data = [{
+    //   name: 'ข้าว',
+    // }]
     setAllfoodInfo(data)
     const menu = [];
     data.map((e) => {
@@ -115,7 +115,7 @@ const TestSearch = () => {
         justifyContent: "center",
         background: "#f9f9f9",
         padding: "0 14rem",
-        height:"800px"
+        height:"900px"
         
       }}
       className={Theme.x}
@@ -164,10 +164,10 @@ const TestSearch = () => {
           รายละเอียด
         </Divider>
         
-        <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-          <Col className="gutter-row" xs={2} sm={4} md={6} lg={8} xl={10}>
+        <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} >
+          <Col className="gutter-row" xs={2} sm={4} md={6} lg={8} xl={10} style={{ margin: "0 auto", justify: "center" }}>
             <div style={{
-              padding: "0 6rem",
+              padding: "0 1rem",
             }}>
               <h1
               style={{
@@ -212,7 +212,7 @@ const TestSearch = () => {
             </div>
           </Col>
         </Row>
-      </div> : <div style={{height: '1300px'}}></div>}
+      </div> : <div style={{height: 'auto'}}></div>}
       
     </div>
   );
