@@ -21,8 +21,10 @@ export const Nav = styled.nav`
     z-index: 10;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
     border-radius: 30px;
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 768px) {
         transition: 0.8s all ease;
+        margin-left: 200px;
+        margin-right: 200px;
     }
     @media screen and (max-width: 480px) {
     margin-left: 50px;

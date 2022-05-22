@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 // import * as React from 'react';
-import { Form, Input, Button, Radio, Card, Select } from "antd";
+import { Form, Input, Button, Radio, Card, Select,Row,Col } from "antd";
 import "antd/dist/antd.css";
 import {Container} from "./CalculatorElements"
 const Calculator = () => {
@@ -85,6 +85,8 @@ const [result, setResult] = useState(0);
   };
 
   return (
+    <Row>
+    <Col flex="auto">
     <Container
     style={{
         display: "table",
@@ -110,7 +112,7 @@ const [result, setResult] = useState(0);
         style={{
             fontSize: "48px",
             fontWeight: "600",
-            marginTop: "120px",
+            margin: "120px auto 0",
             textAlign: "center",
             fontFamily: "Roboto, sans-serif"
             
@@ -278,14 +280,17 @@ const [result, setResult] = useState(0);
         style={{
             borderRadius: "10px",
             border: "0.5px solid#000",
-            width: "270px",
-            marginBottom: "20px",
+            width: "250px",
+            height: "155px",
+            marginBottom: "10px",
         }}
         >
-        <p style={{ fontSize: "35px", fontWeight: "600" }}>{result} Cal</p>
+        <text style={{ fontSize: "35px", fontWeight: "600" }}>{result} Cal</text>
         </Card>
     </div>
     </Container>
+    </Col>
+    </Row>
 )
 }
 

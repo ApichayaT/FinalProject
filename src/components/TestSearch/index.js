@@ -158,14 +158,14 @@ const TestSearch = () => {
           style={{
             fontSize: "20px",
             fontWeight: "500",
-            margin: "10px auto 10px auto",
+            margin: "20px auto 20px auto",
           }}
         >
           รายละเอียด
         </Divider>
         
         <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-          <Col className="gutter-row" span={12}>
+          <Col className="gutter-row" xs={2} sm={4} md={6} lg={8} xl={10}>
             <div style={{
               padding: "0 6rem",
             }}>
@@ -198,7 +198,7 @@ const TestSearch = () => {
             </Card>           
             </div>
           </Col>
-          <Col className="gutter-row" span={12}>
+          <Col className="gutter-row" xs={2} sm={4} md={6} lg={8} xl={10}>
           
             <div style={{
               height: "420px",
