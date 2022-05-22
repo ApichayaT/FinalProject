@@ -299,17 +299,17 @@ const Daily = () => {
           </h2>
         )}
         style={{
-          width: 500,
-          margin: "0 auto",
+          width: 600,
+          margin: "10px auto",
           justifyContent: "center",
           display: "table",
         }}
       />
       <Row
         gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
-        style={{ marginLeft: "2rem", padding: "0 14rem" }}
+        style={{ marginLeft: "2rem", padding: "0 14rem" ,marginRight:"0"}}
       >
-        <Col className="gutter-row" span={12} style={{ margin: "0 auto", justify: "center" }}>
+        <Col className="gutter-row" span={12} style={{ margin: "0 auto", justify: "center",paddingLeft: "60px" }}>
           <Tabs type="card" style={{ marginTop: "20px" }}>
             {/* อาหาร */}
             <TabPane
@@ -326,7 +326,7 @@ const Daily = () => {
                 style={{
                   width: "500px",
                   height: "560px",
-                  margin: "0 auto 40px 0",
+                  margin: "0 auto 100px 0",
                   justifyContent: "center",
                   borderRadius: "0 10px 10px 10px",
                   backgroundColor: "#bddaff",
