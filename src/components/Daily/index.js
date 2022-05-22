@@ -17,14 +17,15 @@ import "antd/dist/antd.css";
 import { Activity } from "../../util/data/Activity";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 // import { getFoodData } from "../../util/handleFirebase";
-import { getFoodDB } from "../../util/handleFirebaseCalApp"
+import { getFoodDB } from "../../util/data/handleFirebaseCalApp"
 import { Tabs } from "antd";
 import { DeleteOutlined } from "@ant-design/icons";
 import "./index.css";
 import { MinusOutlined, PlusOutlined } from "@ant-design/icons";
 import { actData } from "../../util/data/Activity";
 
-import { setData } from '../../util/handleFirebaseCalApp'
+// import { setData } from '../../util/handleFirebaseCalApp'
+// import {foodMenu} from '../../util/data/food'
 
 const { TabPane } = Tabs;
 
@@ -78,7 +79,7 @@ const Daily = () => {
 
   const getFoodforDB = async () => {
     const data = await getFoodDB();
-    
+    // const data = foodMenu
     // const data = [
     //   {
     //     name: "ข้าว",
@@ -271,12 +272,12 @@ const Daily = () => {
   };
 
   const suiBtn =()=>{
-    setData()
+    // setData()
   }
 
   return (
     
-    <div>
+    <div >
       <h1
         style={{
           fontSize: "48px",
@@ -306,9 +307,9 @@ const Daily = () => {
       />
       <Row
         gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
-        style={{ marginLeft: "50px", width: 1000 }}
+        style={{ marginLeft: "2rem", padding: "0 14rem" }}
       >
-        <Col className="gutter-row" span={12}>
+        <Col className="gutter-row" span={12} style={{ margin: "0 auto", justify: "center" }}>
           <Tabs type="card" style={{ marginTop: "20px" }}>
             {/* อาหาร */}
             <TabPane
@@ -360,8 +361,9 @@ const Daily = () => {
                     <Card
                       style={{
                         borderRadius: "5px",
-                        width: "400px",
-                        marginLeft: "22px",
+                        width: "436px",
+                        marginLeft: "5px",
+                        
                       }}
                     >
                       <Text style={{ fontSize: "18px" }}>{food.name}</Text>
@@ -386,12 +388,18 @@ const Daily = () => {
                             เพิ่มลงตาราง
                           </Button>,
                         ]}
-                      >
+                        width={915}
+                        style={{fontFamily: "Prompt"}}>
                         {food ? (
-                          <div>
-                            <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-                              <Col className="gutter-row" span={12}>
-                                <div style={{ marginTop: "15px" }}>
+                          <div >
+                            <Row wrap={true} style={{ background: "#fff" }}>
+                    <Col
+                      // flex="1 0 50%"
+                      // className="columnFlex"
+                      // style={{ background: "transparent" }}
+                      span={12}
+                    >
+                                <div style={{ fontSize: "20px",}}>
                                   <h2 style={{ fontWeight: 600 }}>สารอาหาร</h2>
                                   <h3 style={{ marginLeft: "15px" }}>
                                     โปรตีน: {food?.protein} กรัม
@@ -410,7 +418,12 @@ const Daily = () => {
                                   </h3>
                                 </div>
                               </Col>
-                              <Col className="gutter-row" >
+                              <Col
+                      // flex="1 0 50%"
+                      // className="columnFlex"
+                      // style={{ background: "transparent" }}
+                      span={12}
+                    >
                               <h1
                                   style={{
                                     fontSize: "30px",
@@ -518,19 +531,19 @@ const Daily = () => {
                     </Card>
                   </div>
                 ) : (
-                  <div style={{ height: "1300px" }}></div>
+                  <div style={{ height: "auto" }}></div>
                 )}
               </Card>
             </TabPane>
           </Tabs>
           {/* </div> */}
         </Col>
-        <Col className="gutter-row" span={12}>
+        <Col className="gutter-row" span={12} >
           <Card
             style={{
               width: "560px",
               height: "600px",
-              margin: "30px 50px 0 80px",
+              margin: "45px 50px 0 65px",
               justifyContent: "center",
               borderRadius: "10px",
               backgroundColor: "#bddaff",

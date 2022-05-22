@@ -1,4 +1,4 @@
-export const food = [
+export const foodMenu = [
     {
         carbohydrate: 18.2,
         fat: 0.1,

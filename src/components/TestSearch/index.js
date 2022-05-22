@@ -6,7 +6,8 @@ import { Doughnut } from "react-chartjs-2";
 import { List, Input, Radio, Row, Col, Divider, AutoComplete, Card } from "antd";
 import "antd/dist/antd.css";
 import Theme from "../TestSearch/testStyle.module.css";
-import { getFoodData } from "../../util/handleFirebase";
+import { getFoodDB  } from "../../util/data/handleFirebaseCalApp";
+import {foodMenu} from '../../util/data/food'
 const { Search } = Input;
 
 const TestSearch = () => {
@@ -23,11 +24,12 @@ const TestSearch = () => {
     // console.log(foodData);
   }, []);
   const getFoodforDB = async () => {
-      const data = await getFoodData();
+      const data = await getFoodDB();
+
     // const data = [{
     //   name: 'ข้าว',
     // }]
-    setAllfoodInfo(data)
+    setAllfoodInfo(foodMenu)
     const menu = [];
     data.map((e) => {
       const b = {
