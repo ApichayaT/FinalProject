@@ -116,7 +116,7 @@ const TestSearch = () => {
         margin: "180px 260px auto 260px",
         justifyContent: "center",
         background: "#f9f9f9",
-        padding: "0 14rem",
+        padding: "0 5rem",
         height:"900px"
         
       }}
