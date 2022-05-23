@@ -307,7 +307,7 @@ const Daily = () => {
       />
       <Row
         gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
-        style={{ marginLeft: "2rem", padding: "0 14rem" ,marginRight:"0"}}
+        style={{ marginLeft: "2rem", padding: "0 1rem" ,marginRight:"100px"}}
       >
         <Col className="gutter-row" span={12} style={{ margin: "0 auto", justify: "center",paddingLeft: "60px" }}>
           <Tabs type="card" style={{ marginTop: "20px" }}>

@@ -113,10 +113,10 @@ const TestSearch = () => {
     <div
       style={{
         // display: "table",
-        margin: "180px 260px auto 260px",
+        margin: "180px 144px auto",
         justifyContent: "center",
         background: "#f9f9f9",
-        padding: "0 5rem",
+        padding: "0 0.5rem",
         height:"900px"
         
       }}
