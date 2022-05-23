@@ -51,6 +51,8 @@ const Daily = () => {
   const [activityData, setActivityData] = React.useState([]); // act for option
   const [allActivityInfo, setAllActivityInfo] = React.useState([]); // act from activity.js
   const [activityTable, setActivityTable] = React.useState([]); // act that show on table
+  const [actForDel, setActForDel] = React.useState([]); // act that show on table
+  const [foodForDel, setFoodForDel] = React.useState([]); // act that show on table
 
   React.useEffect(() => {
     // get all menu from firebase
@@ -150,7 +152,6 @@ const Daily = () => {
       },
     ],
   };
-  const [isModalVisible, setIsModalVisible] = useState(false);
   const showModal = () => {
     setIsModalVisible(true);
   };
@@ -163,6 +164,12 @@ const Daily = () => {
   const handleToggle = () => {
     // setOpen(!isOpen);
   };
+  const showModalDelAct = () => {
+    setIsModalDelActVisible(true);
+  };
+  const showModalDelFood = () => {
+    setIsModalDelFoodVisible(true);
+  };
 
   const addFood = () => {
     const x = foodTable;
@@ -174,12 +181,12 @@ const Daily = () => {
     onAdd(food.energy);
   };
 
-  const removeFood = (food) => {
-    console.log("del", food.name);
-    const y = foodTable.filter((el) => el.name !== food.name);
+  const removeFood = (foods) => {
+    console.log("del", foods.name);
+    const y = foodTable.filter((el) => el.name !== foods.name);
     console.log("removeFood", y);
     setFoodTable(y);
-    onDecline(food.energy);
+    onDecline(foods.energy);
   };
 
   const onAdd = (energy) => {
@@ -198,6 +205,7 @@ const Daily = () => {
 
   const onDecline = (energy) => {
     let foodNum = parseInt(energy);
+    console.log({foodNum})
     const newTotalcal = totalCal - foodNum;
     console.log("newTotalcal: ", newTotalcal);
     setTotalCal(newTotalcal);
@@ -239,10 +247,10 @@ const Daily = () => {
   };
   const removeActivity = (act) => {
     console.log("del", act.Name);
-    const removeFood = activityTable.filter((el) => el.Name !== act.Name);
-    console.log("removeFood", removeFood);
-    setActivityTable(removeFood);
-    onDeclineAct(activity.Energy);
+    const removeActivity = activityTable.filter((el) => el.Name !== act.Name);
+    console.log("removeActivity", removeActivity);
+    setActivityTable(removeActivity);
+    onDeclineAct(act.Energy);
   };
 
   const onAddAct = (energy) => {
@@ -260,6 +268,7 @@ const Daily = () => {
 
   const onDeclineAct = (energy) => {
     let actNum = parseInt(energy);
+    console.log({actNum})
     const newTotalcal = totalCal + actNum;
     console.log("newTotalcal: ", newTotalcal);
     setTotalCal(newTotalcal);
@@ -269,6 +278,20 @@ const Daily = () => {
     //   newPercent = 0;
     // }
     setPercent(newPercent);
+  };
+  const handleOkDelAct = () => {
+    setIsModalDelActVisible(false);
+  };
+  const handleCancelDelAct = (act) => {
+    setIsModalDelActVisible(false);
+  };
+
+  const handleOkDelFood = () => {
+    setIsModalDelFoodVisible(false);
+    removeFood(food);
+  };
+  const handleCancelDelFood = () => {
+    setIsModalDelFoodVisible(false);
   };
 
   const suiBtn =()=>{
@@ -594,11 +617,22 @@ const Daily = () => {
                     <Button
                       type="primary"
                       shape="round"
-                      onClick={(e) => removeFood(item)}
+                      onClick={()=>{
+                        showModalDelFood()
+                        setFoodForDel(item)
+                        console.log('ok', item)}}
                     >
                       <DeleteOutlined />
                       {/* Delete */}
                     </Button>
+                    <Modal
+                    visible={isModalDelFoodVisible}
+                    onOk={() => {
+                      removeFood(foodForDel)
+                      console.log('ok', foodForDel)
+                      setIsModalDelFoodVisible(false);
+                    }}
+                    onCancel={handleCancelDelFood}>ต้องการลบรายการนี้ใช่หรือไม่</Modal>
                     <Text>{item.name}</Text>
                     <Text>{item.energy}</Text>
                   </List.Item>
@@ -639,11 +673,21 @@ const Daily = () => {
                     <Button
                       type="primary"
                       shape="round"
-                      onClick={(e) => removeActivity(item)}
+                      onClick={() => {
+                        showModalDelAct()
+                        setActForDel(item)
+                      }}
                     >
                       <DeleteOutlined />
                       {/* Delete */}
                     </Button>
+                    <Modal
+                    visible={isModalDelActVisible}
+                    onOk={()=>{
+                      removeActivity(actForDel)
+                      setIsModalDelActVisible(false);
+                    }}
+                    onCancel={handleCancelDelAct}>ต้องการลบรายการนี้ใช่หรือไม่</Modal>
                     <Text style={{ fontSize: "16px"}}>{item.Name}</Text>
                     <Text style={{ fontSize: "16px"}}>{item.Energy}</Text>
                   </List.Item>
