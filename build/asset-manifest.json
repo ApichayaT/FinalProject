@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7acc0bdc.css",
-    "main.js": "/static/js/main.aea62136.js",
+    "main.js": "/static/js/main.e88d9f88.js",
     "static/media/video.mp4": "/static/media/video.33a52e78b3c05869792d.mp4",
     "static/media/service2.jpg": "/static/media/service2.0f67e68fc2a27a8741cf.jpg",
     "static/media/nutrition1.jpg": "/static/media/nutrition1.72e28423f35852923aec.jpg",
@@ -47,10 +47,10 @@
     "static/media/logo.svg": "/static/media/logo.ed82e8eb83c0585a01f571922c5da724.svg",
     "index.html": "/index.html",
     "main.7acc0bdc.css.map": "/static/css/main.7acc0bdc.css.map",
-    "main.aea62136.js.map": "/static/js/main.aea62136.js.map"
+    "main.e88d9f88.js.map": "/static/js/main.e88d9f88.js.map"
   },
   "entrypoints": [
     "static/css/main.7acc0bdc.css",
-    "static/js/main.aea62136.js"
+    "static/js/main.e88d9f88.js"
   ]
 }
